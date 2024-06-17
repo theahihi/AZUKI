@@ -1,9 +1,6 @@
 * {
   margin: 0px;
 }
-header {
-  position: fixed;
-}
 a {
   text-decoration: none;
 }
@@ -70,8 +67,7 @@ a {
   display: flex;
   align-items: center;
 }
-#search-button {
-}
+
 #button:hover {
   background-color: rgb(79, 142, 173);
 }
@@ -197,7 +193,6 @@ nav.danhmuc {
   transition: background-color 0.75s;
 }
 .footer {
-  background-image: url("../img/footer.jpg");
   background-color: rgb(6, 106, 156);
   height: 410px;
   justify-content: center;
@@ -213,7 +208,7 @@ nav.danhmuc {
 .ftthoongtin {
   width: 300px;
   justify-content: space-between;
-  align-items: ;
+  align-items: center;
 }
 .chinhsach {
   width: 300px;
@@ -357,7 +352,7 @@ nav.danhmuc {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 75%;
   color: rgb(6, 106, 156);
 }
 
@@ -454,11 +449,12 @@ nav.danhmuc {
 .mtsp a:hover {
   color: rgb(220, 220, 14);
 }
-
+.product:hover {
+  box-shadow: 0px 0px 20px black;
+}
 .product:hover .imgsanpham {
   width: 260px;
   height: 280px;
-  box-shadow: 0px 0px 20px black;
 }
 .tieudetintuc {
   width: 350px;
@@ -499,145 +495,99 @@ nav.danhmuc {
 .tintuc:hover .imgtintuc {
   box-shadow: 0px 0px 5px black;
 }
-.xemthemtintuc a {
-  background-color: rgb(6, 106, 156);
-  padding: 15px;
-  color: white;
-  font-weight: bold;
-  border-radius: 15px;
-  transition: 0.5s;
-}
-.xemthemtintuc {
-  margin-top: 30px;
-}
-.xemthemtintuc a:hover {
-  box-shadow: 0px 0px 10px black;
-  color: rgb(220, 220, 14);
-}
-.product_aodieuhoa {
-  margin: 0 auto;
-  max-width: 1400px;
-  display: flex;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-}
-.listaodieuhoa {
-  display: grid;
-  grid-template-columns: 280px 280px 280px 280px 280px;
-}
 
-.aodieuhoa .product .giamgia b {
-  position: absolute;
-  top: 2px;
-  right: 20px; /* Cách mép phải 10px */
-  background-color: red;
-  padding: 8px 6px 8px 6px;
-  color: white;
-  border-radius: 50%;
-}
-.xemtatcasanpham {
-  margin-top: 40px;
-}
-.xemtatcasanpham a {
-  background-color: rgb(6, 106, 156);
-  color: white;
-  padding: 15px;
-  border-radius: 25px;
-  transition: 0.5s;
-  font-weight: bold;
-}
-.xemtatcasanpham a:hover {
-  box-shadow: 0px 0px 10px black;
-  color: rgb(220, 220, 14);
-}
-.khungmotagioithieu {
-  background-color: rgb(6, 106, 156);
-}
-.motagioithieuAzuki {
-  margin: 0 auto;
-  max-width: 1400px;
-  display: flex;
-  margin-top: 50px;
-  flex-direction: column;
-  background-color: rgb(6, 106, 156);
-  color: white;
-}
-.noidungmotagioithieu {
-  display: flex;
-  margin-top: 40px;
-}
-.content_motagioithieu {
-  flex-basis: 65%;
-  width: 500px;
-}
-.imgmotagioithieu {
-  flex-basis: 35%;
-}
-.cangioithieu {
-  margin-top: 30px;
-}
-
-.content_motagioithieu a {
-  color: rgb(6, 106, 156);
-  background-color: white;
-  padding: 15px;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.imgmotagioithieu {
+ .main{
+  max-width: 100%;
+  height: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fffbfb;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url("../") ;
   justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-}
-.content_motagioithieu a:hover {
-  box-shadow: 0px 0px 4px black;
-  color: rgb(220, 220, 14);
-}
-.truyenthongazuki {
-  display: grid;
-  grid-template-columns: 700px 700px;
-}
-.khungnhapthongtin {
-  height: 100px;
-}
-.nhapthongtin {
-  margin: 0 auto;
-  max-width: 1400px;
-  display: grid;
+ }
+ .tieudetsp{
+  text-align: left;
+  position: relative;
+  display: flex ;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
   color: rgb(6, 106, 156);
-  grid-template-columns: auto auto;
 }
-.tieudenhapthongtin {
-  height: 149px;
+.tieudetsp::before,
+.tieudetsp::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-top: 4px solid rgb(6, 106, 156);
+  z-index: 0;
 }
-.tieudenhapthongtin h3 {
-  margin-top: 40px;
+.tieudetsp::before {
+  left: 0;
 }
-.buttonnhapthong .search-text {
-  width: 327px;
-  height: 42px;
-  background-color: white;
-  border: 1px solid rgb(51, 49, 49);
-  border-radius: 0px;
+
+.tieudetsp::after {
+  right: 0;
+}
+.listsanphamchitiet{
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px 260px;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .sotrang ul.page-numbers {
+    display: flex ;
+    list-style: none;
+    justify-content: flex-end;
+    padding-top: 25px ;
+    position: sticky;
+    
+}
+
+.sotrang ul.page-numbers li {
+   margin: 0px auto px;
+   max-width: 1400px;
+}
+
+.sotrang ul.page-numbers a,
+.sotrang ul.page-numbers span {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #333;
+    text-decoration: none;
+}
+
+.sotrang ul.page-numbers a:hover {
+    background-color: #eee;
+}
+
+.sotrang ul.page-numbers .current {
+    background-color: rgb(6, 106, 156);
+    color: #fff;
+    border-color: #333;
+}
+.sapxep {
   display: flex;
-  align-items: center;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin-top: 30px;
+  justify-content: right;
+  margin-bottom: 20px;
+  padding: 10px 2% ;
+  font-size: 20px;
 }
-.buttonnhapthong #button {
-  padding: 9px;
-  padding-top: 13px;
-  padding-bottom: 10px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border: 1px solid rgb(51, 49, 49);
+
+.sapxepvitri {
+  display: inline-block;
 }
-.buttonnhapthong #button #search-button {
-  color: white;
-  font-weight: bolder;
+
+.sapxepvitri .oderby{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
 }
+ 

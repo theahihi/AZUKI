@@ -1,0 +1,45 @@
+/* CSS */
+.login-box {
+  width: 350px;
+  height: 450px;
+  background-color: #ecf0f3;
+  color: #34495e;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 40px auto; /* add this line to center the login box */
+}
+
+.textbox {
+  position: relative;
+  margin: 30px 0;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #34495e;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom: 2px solid #34495e;
+  background: transparent;
+}
+
+.textbox i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  color: #34495e;
+  transition: 0.3s;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.nut {
+  margin-left: 25px;
+  margin-top: -5px;
+}

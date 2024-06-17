@@ -1,0 +1,498 @@
+* {
+    margin: 0px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .linkdau {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  .linkdaucon {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgb(105, 105, 105);
+    font-size: 13px;
+    color: rgb(40, 38, 38);
+  }
+  .linkdaucon:last-child {
+    border: none;
+  }
+  .linkdaucon:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .congcu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .congcucon1 {
+    display: flex;
+    margin-top: -10px;
+    grid-template-columns: auto auto;
+  }
+  .chulogo {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .congcu .congcucon1 .chulogo p {
+    margin-top: 0px;
+  }
+  
+  .search-text {
+    width: 320px;
+    height: 42px;
+    background-color: none;
+    border: 1px solid rgb(173, 167, 159);
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+  }
+  #input {
+    flex-basis: 70%;
+  }
+  #button {
+    flex-basis: 30%;
+    padding: 9px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background-color: rgb(6, 106, 156);
+    border-radius: 0px;
+    border: 1px solid rgb(173, 167, 159);
+    display: flex;
+    align-items: center;
+  }
+  /* #search-button {
+  } */
+  #button:hover {
+    background-color: rgb(79, 142, 173);
+  }
+  #search-input {
+    width: 270px;
+    height: 25px;
+    border-radius: 22px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+  }
+  
+  #timkiem {
+    border-radius: 12px;
+    color: black;
+  }
+  #timkiem:hover {
+    background-color: rgb(221, 241, 221);
+  }
+  .giohang_lienhe {
+    display: flex;
+  }
+  .dienthoai {
+    display: flex;
+  }
+  .motadienthoai {
+    margin-left: 10px;
+  }
+  .icondienthoai {
+    display: flex;
+    align-items: center;
+  }
+  .giohang {
+    display: flex;
+    margin-left: 20px;
+  }
+  .icongiohang {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  nav {
+    display: flex;
+    background-color: rgb(6, 106, 156);
+    flex: 100%;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav a.daumuc {
+    color: white;
+    padding: 15px 21px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px solid rgb(115, 183, 217);
+    flex: 100%;
+  }
+  #bogach {
+    border-right: none;
+  }
+  nav a.daumuc:hover {
+    background-color: rgb(76, 129, 155);
+    transition: background-color 0.75s;
+  }
+  
+  nav #selected {
+    background-color: rgb(76, 129, 155);
+  }
+  .box_menu {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  .box_menu ul {
+    display: inline-flex;
+    list-style: none;
+  }
+  nav.danhmuc {
+    height: 50px;
+  }
+  
+  .box_submenu {
+    display: none;
+    position: relative;
+    z-index: 1000;
+    transition: 3s;
+  }
+  .box_menu ul li:hover > .box_submenu {
+    display: block;
+    position: absolute;
+    background-color: rgb(6, 106, 156);
+    margin-top: 13px;
+    margin-left: 0px;
+  }
+  .box_menu ul li:hover .box_submenu ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+  .box_menu ul li:hover .box_submenu ul li {
+    width: 220px;
+    text-align: left;
+  
+    border-bottom: 1px solid white;
+    background: transparent;
+    border-radius: 0;
+    padding: 15px;
+    margin: 10px;
+  }
+  .box_menu ul li:hover .box_submenu ul li:last-child {
+    border-bottom: none;
+  }
+  .box_submenu ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .box_menu ul li:hover .box_submenu ul li:hover {
+    background-color: rgb(76, 129, 155);
+    transition: background-color 0.75s;
+  }
+  .footer {
+    background-color: rgb(6, 106, 156);
+    height: 410px;
+    justify-content: center;
+  }
+  
+  .thongtinfooter {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+  }
+  .ftthoongtin {
+    width: 300px;
+    justify-content: space-between;
+    /* align-items: ; */
+  }
+  .chinhsach {
+    width: 300px;
+  }
+  .sanpham {
+    width: 300px;
+  }
+  .thongtinfooter a {
+    color: white;
+  }
+  .sanpham,
+  .chinhsach,
+  .mxhvamap {
+    margin-top: 20px;
+  }
+  .thongtinfooter .list {
+    margin-top: 20px;
+  }
+  .sanpham ul,
+  .chinhsach ul {
+    margin-left: -20px;
+  }
+  .mxhvamap .mxh {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .mxhvamap .mxh a {
+    margin-right: 10px;
+  }
+  .mxhvamap .mxh a i {
+    font-size: 30px;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+  }
+  
+  .mxhvamap .mxh a:hover i {
+    font-size: 35px;
+    transform: scale(1.1);
+  }
+  
+  .thongtinfooter li.list a:hover {
+    color: rgb(220, 220, 14);
+  }
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgslide {
+    width: 1520px;
+    height: 850px;
+  }
+  
+  .slide-show {
+    width: 1520px;
+    overflow: hidden;
+    position: relative;
+  }
+  .list-image {
+    display: flex;
+    transition: 0.7s;
+  }
+  
+  .btn:hover {
+    color: rgb(2, 169, 253);
+  }
+  .btn {
+    font-size: 45px;
+    color: rgb(76, 129, 155);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .btn-left {
+    left: 0;
+  }
+  .btn-right {
+    right: 0;
+  }
+  .index-item {
+    border: 2px solid rgb(5, 127, 188);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+  .index-image {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .active {
+    background-color: rgb(6, 106, 156);
+  }
+  .dichvu {
+    margin-top: -3px;
+    height: 170px;
+    background-color: rgb(6, 106, 156);
+  }
+  .dichvucon {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .ttdichvu {
+    margin-top: 10px;
+    width: 235px;
+    height: 185px;
+  }
+  .canicon {
+    text-align: center;
+  }
+  .dichvu .dichvucon .ttdichvu {
+    color: white;
+    text-align: center;
+  }
+  .dichvu .dichvucon .ttdichvu h4 {
+    margin-top: 10px;
+  }
+  .dichvu .dichvucon .ttdichvu p {
+    margin-top: 10px;
+  }
+  .sanphamvatintuc {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    margin-top: 20px;
+  }
+  .sanphamnoibat {
+    flex-basis: 75%;
+  }
+  .tintucnoibat {
+    flex-basis: 25%;
+  }
+  .tieudesp {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(6, 106, 156);
+  }
+  
+  .tieudesp::before,
+  .tieudesp::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-top: 4px solid rgb(6, 106, 156);
+    z-index: 0;
+  }
+  
+  .tieudesp::before {
+    left: 0;
+  }
+  
+  .tieudesp::after {
+    right: 0;
+  }
+  .imgsanpham {
+    width: 240px;
+    height: 260px;
+    display: block;
+    transition: 0.8s;
+  }
+  .tieudesp h1 {
+    background: white;
+    padding: 0 10px;
+    z-index: 1;
+    position: relative;
+  }
+  .tintucnoibat {
+    margin-left: 10px;
+  }
+  .tintucnoibat h1 {
+    background-color: rgb(6, 106, 156);
+    color: white;
+    padding: 2px;
+  }
+  .listsanpham {
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+  }
+  .product {
+    margin-top: 40px;
+    transition: 0.5s;
+  }
+  .anhsanpham {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .giamgia b {
+    position: absolute;
+    top: 2px;
+    right: 10px; /* Cách mép phải 10px */
+    background-color: red;
+    padding: 8px 6px 8px 6px;
+    color: white;
+    border-radius: 50%;
+  }
+  .content_product {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+  }
+  .mtsp {
+    width: 240px;
+    text-align: justify;
+    background-color: rgb(6, 106, 156);
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .mtsp a {
+    color: white;
+    transition: 0.5s;
+  }
+  .price {
+    margin-top: 15px;
+  }
+  .price .giadagiam {
+    margin-right: 60px;
+  }
+  .price .giagoc {
+    color: #c9c7c7;
+    text-decoration: line-through;
+  }
+  .count_sell {
+    text-align: right;
+    margin-top: 10px;
+  }
+  .mtsp a:hover {
+    color: rgb(220, 220, 14);
+  }
+  .product:hover {
+    box-shadow: 0px 0px 20px black;
+  }
+  .product:hover .imgsanpham {
+    width: 260px;
+    height: 280px;
+  }
+  .tieudetintuc {
+    width: 350px;
+  }
+  .anhtintucnoibat {
+    width: 140px;
+    height: 130px;
+    transition: 0.5s;
+  }
+  .tintuc {
+    display: flex;
+  }
+  .imgtintuc {
+    flex-basis: 40%;
+  }
+  .content_tintuc {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .motatintuc {
+    flex-basis: 60%;
+    width: 194px;
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+  
+  .motatintuc a {
+    color: black;
+    transition: 0.35s;
+  }
+  .motatintuc a:hover {
+    color: rgb(220, 220, 14);
+  }
+  .tintuc:hover .anhtintucnoibat {
+    width: 150px;
+    height: 140px;
+  }
+  .tintuc:hover .imgtintuc {
+    box-shadow: 0px 0px 5px black;
+  }

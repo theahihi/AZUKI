@@ -1,0 +1,34 @@
+body {
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+}
+.container h1 {
+  color: #333;
+  text-align: center;
+}
+
+.container h2,
+.container h3 {
+  color: #333;
+}
+
+.container p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.container .highlight {
+  color: #e74c3c;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact p {
+  margin: 5px 0;
+}

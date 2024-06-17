@@ -1,0 +1,49 @@
+.entry-content {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: 1024px;
+}
+body {
+  text-align: justify;
+}
+.entry-content h2 {
+  color: black; /* Màu chữ */
+  font-size: 24px; /* Kích thước chữ */
+  font-weight: bold; /* Độ đậm của chữ */
+  text-align: left; /* Căn giữa chữ */
+  margin-top: 20px; /* Khoảng cách bên trên */
+  margin-bottom: 20px; /* Khoảng cách bên dưới */
+}
+.entry-content h3 {
+  color: black; /* Màu chữ */
+  font-size: 18px; /* Kích thước chữ */
+  font-weight: bold; /* Độ đậm của chữ */
+  text-align: left; /* Căn giữa chữ */
+  margin-top: 15px; /* Khoảng cách bên trên */
+  margin-bottom: 15px; /* Khoảng cách bên dưới */
+}
+.entry-content p {
+  color: black; /* Màu chữ */
+  font-size: 15px; /* Kích thước chữ */
+  text-align: left; /* Căn giữa chữ */
+  margin-top: 12px; /* Khoảng cách bên trên */
+  margin-bottom: 12px; /* Khoảng cách bên dưới */
+}
+.entry-content a:link {
+  text-decoration: none;
+  color: black;
+}
+.entry-content a:visited {
+  text-decoration: none;
+  color: black;
+}
+.entry-content a:hover {
+  color: blue;
+}
+.entry-content a:active {
+  color: red;
+}
+.entry-content h3 {
+  text-align: justify;
+}
