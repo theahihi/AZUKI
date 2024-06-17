@@ -596,3 +596,45 @@ nav.danhmuc {
   display: grid;
   grid-template-columns: 700px 700px;
 }
+.khungnhapthongtin {
+  height: 100px;
+}
+.nhapthongtin {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: grid;
+  color: rgb(6, 106, 156);
+  grid-template-columns: auto auto;
+}
+.tieudenhapthongtin {
+  height: 149px;
+}
+.tieudenhapthongtin h3 {
+  margin-top: 40px;
+}
+.buttonnhapthong .search-text {
+  width: 327px;
+  height: 42px;
+  background-color: white;
+  border: 1px solid rgb(51, 49, 49);
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-top: 30px;
+}
+.buttonnhapthong #button {
+  padding: 9px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 1px solid rgb(51, 49, 49);
+}
+.buttonnhapthong #button #search-button {
+  color: white;
+  font-weight: bolder;
+}
