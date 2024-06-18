@@ -57,17 +57,21 @@ a {
   flex-basis: 70%;
 }
 #button {
-  flex-basis: 30%;
-  padding: 9px;
-  padding-top: 12px;
-  padding-bottom: 10px;
+}
+#search-button {
+  padding: 11.5px;
+  cursor: pointer;
   background-color: rgb(6, 106, 156);
-  border-radius: 0px;
-  border: 1px solid rgb(173, 167, 159);
-  display: flex;
-  align-items: center;
 }
 
+#search-input {
+  width: 270px;
+  height: 25px;
+  border-radius: 22px;
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
 #button:hover {
   background-color: rgb(79, 142, 173);
 }
@@ -496,7 +500,7 @@ nav.danhmuc {
   box-shadow: 0px 0px 5px black;
 }
 
- .main{
+.main {
   max-width: 100%;
   height: 90%;
   margin: 50px auto;
@@ -505,14 +509,14 @@ nav.danhmuc {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-image: url("../") ;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("../");
   justify-content: center;
- }
- .tieudetsp{
+}
+.tieudetsp {
   text-align: left;
   position: relative;
-  display: flex ;
+  display: flex;
   align-items: left;
   justify-content: left;
   width: 100%;
@@ -534,49 +538,48 @@ nav.danhmuc {
 .tieudetsp::after {
   right: 0;
 }
-.listsanphamchitiet{
-    display: grid;
-    grid-template-columns: 260px 260px 260px 260px 260px;
-    justify-content: center;
-    padding-left: 10px;
-  }
-  .sotrang ul.page-numbers {
-    display: flex ;
-    list-style: none;
-    justify-content: flex-end;
-    padding-top: 25px ;
-    position: sticky;
-    
+.listsanphamchitiet {
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px 260px;
+  justify-content: center;
+  padding-left: 10px;
+}
+.sotrang ul.page-numbers {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding-top: 25px;
+  position: sticky;
 }
 
 .sotrang ul.page-numbers li {
-   margin: 0px auto px;
-   max-width: 1400px;
+  margin: 0px auto px;
+  max-width: 1400px;
 }
 
 .sotrang ul.page-numbers a,
 .sotrang ul.page-numbers span {
-    display: inline-block;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    color: #333;
-    text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
 }
 
 .sotrang ul.page-numbers a:hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .sotrang ul.page-numbers .current {
-    background-color: rgb(6, 106, 156);
-    color: #fff;
-    border-color: #333;
+  background-color: rgb(6, 106, 156);
+  color: #fff;
+  border-color: #333;
 }
 .sapxep {
   display: flex;
   justify-content: right;
   margin-bottom: 20px;
-  padding: 10px 2% ;
+  padding: 10px 2%;
   font-size: 20px;
 }
 
@@ -584,10 +587,9 @@ nav.danhmuc {
   display: inline-block;
 }
 
-.sapxepvitri .oderby{
+.sapxepvitri .oderby {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 20px;
 }
- 
