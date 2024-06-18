@@ -109,6 +109,13 @@
                 <a class="daumuc" href="" id="bogach"
                   >Chính sách <i class="fa fa-angle-down"></i
                 ></a>
+                <script>
+                  document
+                    .getElementById("bogach")
+                    .addEventListener("click", function (event) {
+                      event.preventDefault();
+                    });
+                </script>
                 <div class="box_submenu">
                   <ul>
                     <li>
@@ -600,5 +607,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/trangchu.js"></script>
   </body>
 </html>

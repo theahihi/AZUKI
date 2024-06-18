@@ -103,6 +103,13 @@
                 <a class="daumuc" href=""  id="selected"
                   >Chính sách <i class="fa fa-angle-down"></i
                 ></a>
+                <script>
+                  document
+                    .getElementById("selected")
+                    .addEventListener("click", function (event) {
+                      event.preventDefault(); 
+                    });
+                </script>
                 <div class="box_submenu">
                   <ul>
                     <li><a href="">chính sách bảo hành</a></li>
@@ -267,5 +274,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/trangchu.js"></script>
   </body>
 </html>

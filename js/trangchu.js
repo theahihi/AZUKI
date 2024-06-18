@@ -40,3 +40,7 @@ btnLeft.addEventListener("click", () => {
   }
   handleEventChangeSilde = setInterval(ChangeSlide, 10000);
 });
+
+document.getElementById("bogach").addEventListener("click", function (event) {
+  event.preventDefault();
+});
