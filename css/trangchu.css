@@ -1,8 +1,20 @@
 * {
   margin: 0px;
 }
-header {
+.header {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  transition: top 0.3s;
+}
+.header.hidden {
+  top: -160px; /* Điều chỉnh chiều cao của header (tùy chỉnh theo thiết kế của bạn) */
+}
+.header_space {
+  height: 150px;
 }
 a {
   text-decoration: none;
@@ -35,6 +47,7 @@ a {
   max-width: 1200px;
 }
 .congcucon1 {
+  width: 427px;
   display: flex;
   margin-top: -10px;
   grid-template-columns: auto auto;
