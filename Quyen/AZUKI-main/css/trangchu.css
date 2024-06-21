@@ -56,8 +56,7 @@ a {
 #input {
   flex-basis: 70%;
 }
-#button {
-}
+
 #search-button {
   padding: 11.5px;
   cursor: pointer;
@@ -345,7 +344,7 @@ nav.danhmuc {
   margin-top: 20px;
 }
 .sanphamnoibat {
-  flex-basis: 75%;
+  flex-basis: 100%;
 }
 .tintucnoibat {
   flex-basis: 25%;
@@ -378,8 +377,8 @@ nav.danhmuc {
   right: 0;
 }
 .imgsanpham {
-  width: 240px;
-  height: 260px;
+  width: 390px;
+  height: 390px;
   display: block;
   transition: 0.8s;
 }
@@ -398,12 +397,16 @@ nav.danhmuc {
   padding: 2px;
 }
 .listsanpham {
-  display: grid;
-  grid-template-columns: 260px 260px 260px 260px;
+  display: flex;
+  grid-template-columns: 260px 260px 260px;
+  justify-content: center;
+  gap: 20px;
 }
 .product {
   margin-top: 40px;
   transition: 0.5s;
+  width: fit-content;
+  padding-left:  20px ;
 }
 .anhsanpham {
   position: relative;
@@ -425,7 +428,8 @@ nav.danhmuc {
   justify-content: center;
 }
 .mtsp {
-  width: 240px;
+  width: 390px;
+  height: 100px;
   text-align: justify;
   background-color: rgb(6, 106, 156);
   color: white;
@@ -537,9 +541,9 @@ nav.danhmuc {
 }
 .listsanphamchitiet {
   display: grid;
-  grid-template-columns: 260px 260px 260px 260px 260px;
+  grid-template-columns: 400px 400px 400px;
   justify-content: center;
-  padding-left: 10px;
+  gap: 20px;
 }
 .sotrang ul.page-numbers {
   display: flex;
