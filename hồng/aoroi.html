@@ -1,12 +1,20 @@
-<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AZUKI – Sweat Away, Happiness Stays</title>
-    <link rel="stylesheet" href="./css/tintuc.css" />
-    <link rel="stylesheet" href="../css/trangchu.css" />
+    <title>Áo rời</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../Quyen/AZUKI-main/css/trangchu.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/trangchu.css"
+    />
+    <link rel="stylesheet" href="../Quyen/AZUKI-main/css/trangchu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -29,10 +37,10 @@
   <body>
     <div class="header">
       <div class="linkdau">
-        <a href="./gioithieu.html" class="linkdaucon">Giới thiệu</a>
-        <a href="" class="linkdaucon">Tin tức</a>
+        <a href="../hồng/gioithieu.html" class="linkdaucon">Giới thiệu</a>
+        <a href="../hồng/tintuc.html" class="linkdaucon">Tin tức</a>
         <a href="../maianh/lienhe.html" class="linkdaucon">Liên hệ</a>
-        <a href="./dangnhap.html" class="linkdaucon">Đăng nhập</a>
+        <a href="../hồng/dangnhap.html" class="linkdaucon">Đăng nhập</a>
       </div>
       <div class="congcu">
         <div class="congcucon1" id="logovachu">
@@ -93,9 +101,7 @@
                 <a class="daumuc" href="../index.html">Trang chủ</a>
               </li>
               <li class="muc">
-                <a class="daumuc" href="../Quyen/ao_dieu_hoa.html"
-                  >Áo điều hoà</a
-                >
+                <a class="daumuc" href="" id="selected">Áo điều hoà</a>
               </li>
               <li class="muc"><a class="daumuc" href="">Áo sưởi ấm</a></li>
               <li class="muc">
@@ -143,52 +149,178 @@
         </div>
       </nav>
     </div>
-    
     <div class="header_space"></div>
-    <div>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="./img/image1.png" alt="News Image 1" />
-                <h2>Áo điều hòa Azuki 2024 có những công nghệ mới đột phá nào?</h2>
-                <p>Khám phá những công nghệ mới đột phá của áo điều hòa Azuki 2024.</p>
+    <div class="main">
+      <div class="sanphamvatintuc">
+        <div class="sanphamnoibat">
+          <div class="tieudetsp">
+            <h1 style="text-align: center"><i>Áo rời</i></h1>
+          </div>
+          <div class="sapxep">
+            <form class="sapxepvitri" method="get">
+              <select name="orderby" class="orderby">
+                <option value="menu_order" selected="selected">
+                  Sắp xếp theo
+                </option>
+                <option value="popularity">Bán nhiều nhất</option>
+                <option value="date">Giảm giá</option>
+                <option value="price">Giá từ thấp đến cao</option>
+                <option value="price-desc">Giá từ cao xuống thấp</option>
+              </select>
+              <input type="hidden" name="paged" value="1" />
+            </form>
+          </div>
+          <div class="listsanphamchitiet">
+            <div class="product">
+              <div class="anhsanpham">
+                <p style="text-align: center">
+                  <a href="">
+                    <img
+                      class="imgsanpham"
+                      src="./img/ao2024.jpg"
+                      alt=""
+                    />
+                  </a>
+                </p>
+                <div class="giamgia">
+                  <b>-32%</b>
+                </div>
+              </div>
+              <div class="content_product">
+                <div class="mtsp">
+                  <div class="mt">
+                    <b
+                      ><a href="">
+                        Áo điều hòa Azuki dài tay 2024
+                    </a
+                      >
+                    </b>
+                  </div>
+                  <div class="price">
+                    <p>
+                      <span class="giadagiam">800.000₫</span>
+                      <span class="giagoc">544.000₫</span>
+                    </p>
+                  </div>
+                  <div class="count_sell">
+                    <p>Đã bán <b>135</b> sản phẩm</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="grid-item">
-                <img src="./img/image2.jpg" alt="News Image 2" />
-                <h2>Áo điều hòa Azuki – kiến tạo kỳ tích, chinh phục thế giới</h2>
-                <p>Azuki đang tạo ra kỳ tích và chinh phục thị trường toàn cầu.</p>
+            <div class="product">
+              <div class="anhsanpham">
+                <p style="text-align: center">
+                  <a href="">
+                    <img
+                      class="imgsanpham"
+                      src="./img/gile.png"
+                      alt=""
+                    />
+                  </a>
+                </p>
+              </div>
+              <div class="content_product">
+                <div class="mtsp">
+                  <div class="mt">
+                    <b
+                      ><a href=""
+                        >Áo điều hòa gile Azuki UV CUT 2024
+                      </a>
+                    </b>
+                  </div>
+                  <div class="price">
+                    <p>
+                      <span class="giadagiam">900.000₫</span>
+                    </p>
+                  </div>
+                  <div class="count_sell">
+                    <p>Đã bán <b>220</b> sản phẩm</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="grid-item">
-                <img src="./img/image3.jpg" alt="News Image 3" />
-                <h2>Bệnh Viện Chợ Rẫy – TP Hồ Chí Minh sử dụng áo làm mát Azuki</h2>
-                <p>Bệnh Viện Chợ Rẫy ứng dụng áo làm mát Azuki trong chăm sóc bệnh nhân.</p>
+            <div class="product">
+              <div class="anhsanpham">
+                <p style="text-align: center">
+                  <a href="">
+                    <img
+                      class="imgsanpham"
+                      src="./img/ngantay.png"
+                      alt=""
+                    />
+                  </a>
+                </p>
+                <div class="giamgia"></div>
+              </div>
+              <div class="content_product">
+                <div class="mtsp">
+                  <div class="mt">
+                    <b
+                      ><a href=""
+                        >Áo điều hòa Azuki ngắn tay 2024
+                      </a>
+                    </b>
+                  </div>
+                  <div class="price">
+                    <p>
+                      <span class="giadagiam">470.000₫</span>
+                    </p>
+                  </div>
+                  <div class="count_sell">
+                    <p>Đã bán <b>135</b> sản phẩm</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="grid-item">
-                <img src="./img/image4.jpg" alt="News Image 4" />
-                <h2>Áo sưởi ấm bằng điện liệu có tốt và ấm như quảng cáo? Có nguy hiểm không?</h2>
-                <p>Đánh giá về áo sưởi ấm bằng điện: chất lượng và độ an toàn.</p>
-            </div>
-            <div class="grid-item">
-                <img src="./img/image5.jpg" alt="News Image 5" />
-                <h2>Công ty TNHH Azuki kết hợp cùng Bộ Y Tế tham gia nghiên cứu sản phẩm áo làm mát kết hợp đồ bảo hộ y tế</h2>
-                <p>Azuki và Bộ Y Tế hợp tác nghiên cứu sản phẩm áo làm mát tích hợp bảo hộ y tế.</p>
-            </div>
-            <div class="grid-item">
-                <img src="./img/image6.png" alt="News Image 6" />
-                <h2>Áo điều hòa là gì? Cách phân biệt áo điều hòa Azuki với loại kém chất lượng?</h2>
-                <p>Hướng dẫn phân biệt áo điều hòa Azuki chính hãng và loại kém chất lượng.</p>
-            </div>
-        </div>
-        <div class="sotrang">
-          <ul class="pagination page-numbers">
-              <li><a class="prev page-numbers" href="#">&laquo;</a></li>
-              <li><span class="current-page current page-numbers">1</span></li>
+            
+            <div class="product">
+                <div class="anhsanpham">
+                  <p style="text-align: center">
+                    <a href="">
+                      <img
+                        class="imgsanpham"
+                        src="./img/chongnang.png"
+                        alt=""
+                      />
+                    </a>
+                  </p>
+                  <div class="giamgia"></div>
+                </div>
+                <div class="content_product">
+                  <div class="mtsp">
+                    <div class="mt">
+                      <b
+                        ><a href=""
+                          >Áo điều hòa chống nắng Azuki Sun Protect 2024
+                        </a>
+                      </b>
+                    </div>
+                    <div class="price">
+                      <p>
+                        <span class="giadagiam">470.000₫</span>
+                      </p>
+                    </div>
+                    <div class="count_sell">
+                      <p>Đã bán <b>135</b> sản phẩm</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+          <div class="sotrang">
+            <ul class="page-numbers">
+              <li><a class="page-numbers" href="#">&laquo; </a></li>
+              <li><span class="page-numbers current">1</span></li>
               <li><a class="page-numbers" href="#">2</a></li>
-              <li><a class="next page-numbers" href="#">&raquo;</a></li>
-          </ul>
+              <li><a class="page-numbers" href="#"> &raquo;</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-
-
     <div class="footer">
       <div class="thongtinfooter">
         <div class="ftthoongtin">
