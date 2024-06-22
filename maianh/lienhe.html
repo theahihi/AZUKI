@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lienhe</title>
+    <link rel="stylesheet" href="../css/trangchu.css" />
     <link rel="stylesheet" href="./css/lienhe.css" />
     <script src="./js/lienhe.js"></script>
-    <link rel="stylesheet" href="../css/trangchu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <style>
       body {
         font-family: "Roboto", sans-serif;
@@ -22,7 +23,7 @@
     </style>
     <link
       rel="shortcut icon"
-      href="../img/faviconazuki.ico"
+      href="./img/faviconazuki.ico"
       type="image/x-icon"
     />
   </head>
@@ -31,7 +32,7 @@
       <div class="linkdau">
         <a href="../hồng/gioithieu.html" class="linkdaucon">Giới thiệu</a>
         <a href="../hồng/tintuc.html" class="linkdaucon">Tin tức</a>
-        <a href="" class="linkdaucon">Liên hệ</a>
+        <a href="./lienhe.html" class="linkdaucon">Liên hệ</a>
         <a href="../hồng/dangnhap.html" class="linkdaucon">Đăng nhập</a>
       </div>
       <div class="congcu">
@@ -77,7 +78,7 @@
             <div class="motagiohang">
               <p class="">
                 GIỎ HÀNG <br />
-                <span> 0 sản phẩm</span>
+                <span> 0 sản phẩm </span>
               </p>
             </div>
           </div>
@@ -88,7 +89,9 @@
           <nav>
             <ul>
               <li class="muc">
-                <a class="daumuc" href="../index.html">Trang chủ</a>
+                <a class="daumuc" href="../index.html" id="selected"
+                  >Trang chủ</a
+                >
               </li>
               <li class="muc">
                 <a class="daumuc" href="../Quyen/ao_dieu_hoa.html"
@@ -108,16 +111,9 @@
                 </div>
               </li>
               <li class="muc">
-                <a class="daumuc" href="" id="bogach"
-                  >Chính sách <i class="fa fa-angle-down"></i
-                ></a>
-                <script>
-                  document
-                    .getElementById("bogach")
-                    .addEventListener("click", function (event) {
-                      event.preventDefault();
-                    });
-                </script>
+                <a class="daumuc" href="" id="bogach">
+                  Chính sách <i class="fa fa-angle-down"></i>
+                </a>
 
                 <div class="box_submenu">
                   <ul>
@@ -159,12 +155,14 @@
             <h4>THÔNG TIN LIÊN LẠC</h4>
             <p>0888832368</p>
             <p>
+              Facebook:
               <a href="https://www.facebook.com/aodieuhoanhatban.vn"
-                >Facebook</a
+                >aodieuhoanhatban.vn</a
               >
             </p>
             <p>
-              Gmail: <a href="mailto:email@example.com">email@example.com</a>
+              Gmail:
+              <a href="mailto:email@example.com">Huonglkt2310@gmail.com</a>
             </p>
           </div>
         </div>
@@ -207,7 +205,7 @@
       <div class="thongtinfooter">
         <div class="ftthoongtin">
           <img
-            src="../img/logotrangazuki.png"
+            src="./img/logotrangazuki.png"
             alt=""
             style="width: 180px; height: 70px"
           />
@@ -247,7 +245,9 @@
         <div class="sanpham">
           <h3>SẢN PHẨM</h3>
           <ul>
-            <li class="list"><a href="">Áo điều hoà AZUKI</a></li>
+            <li class="list">
+              <a href="../Quyen/ao_dieu_hoa.html">Áo điều hoà AZUKI</a>
+            </li>
             <li class="list"><a href="">Áo điều hoà AZUKI 2024 </a></li>
             <li class="list"><a href="">Phụ kiện áo điều hoà AZUKI</a></li>
             <li class="list"><a href="">Áo sưởi ấm AZUKI</a></li>
@@ -256,7 +256,9 @@
         <div class="chinhsach">
           <h3>CHÍNH SÁCH</h3>
           <ul>
-            <li class="list"><a href="">Chính sách bảo hành</a></li>
+            <li class="list">
+              <a href="./chinhsachbaohanh.html">Chính sách bảo hành</a>
+            </li>
             <li class="list"><a href="">Chính sách chuyển hàng</a></li>
             <li class="list"><a href="">Chính sách vận chuyển</a></li>
             <li class="list">
@@ -296,7 +298,7 @@
         </div>
       </div>
     </div>
-    <script src="../js/timkiem.js"></script>
     <script src="../js/cuonheader.js"></script>
+    <script src="../js/timkiem.js"></script>
   </body>
 </html>
