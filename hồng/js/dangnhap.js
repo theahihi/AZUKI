@@ -4,3 +4,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Chuyển hướng tới trang chủ sau khi đăng nhập thành công
     window.location.href = "https://theahihi.github.io/AZUKI/index.html"; 
 });
+
+
+//check thêm cần điền nội dung trước khi ấn button
+
+
