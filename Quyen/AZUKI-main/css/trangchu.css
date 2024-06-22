@@ -406,7 +406,7 @@ nav.danhmuc {
   margin-top: 40px;
   transition: 0.5s;
   width: fit-content;
-  padding-left:  20px ;
+  padding-left: 20px;
 }
 .anhsanpham {
   position: relative;
@@ -458,8 +458,9 @@ nav.danhmuc {
   color: rgb(220, 220, 14);
 }
 .product:hover .imgsanpham {
-  width: 260px;
-  height: 280px;
+  width: 410px;
+  height: 410px;
+  box-shadow: 0px 0px 7px black;
 }
 .tieudetintuc {
   width: 350px;
