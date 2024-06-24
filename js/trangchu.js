@@ -45,11 +45,6 @@ document.getElementById("bogach").addEventListener("click", function (event) {
   event.preventDefault();
 });
 
-document.getElementById("search-button").addEventListener("click", function () {
-  let query = document.getElementById("search-input").value.toLowerCase();
-
-  
-
 document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0;
   const header = document.querySelector(".header");
