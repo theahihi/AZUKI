@@ -3,14 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Áo sưởi ấm</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../Quyen/AZUKI-main/css/trangchu.css"
-    />
-    <link rel="stylesheet" type="text/css" href="../css/trangchu.css" />
-    <link rel="stylesheet" href="../Quyen/AZUKI-main/css/trangchu.css" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../css/trangchu.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -25,10 +20,10 @@
       }
     </style>
     <link
-      rel="shortcut icon"
-      href="../img/faviconazuki.ico"
-      type="image/x-icon"
-    />
+    rel="shortcut icon"
+    href="../img/faviconazuki.ico"
+    type="image/x-icon"
+  />
   </head>
   <body>
     <div class="header">
@@ -41,9 +36,7 @@
       <div class="congcu">
         <div class="congcucon1" id="logovachu">
           <div class="logo">
-            <a href="../index.html"
-              ><img src="../img/logoazuki.png" alt=""
-            /></a>
+            <a href="../index.html"><img src="./img/logoazuki.png" alt="" /></a>
           </div>
           <div class="chulogo">
             <h3>ÁO ĐIỀU HÒA AZUKI</h3>
@@ -94,45 +87,37 @@
           <nav>
             <ul>
               <li class="muc">
-                <a class="daumuc" href="../index.html">Trang chủ</a>
+                <a class="daumuc" href="../index.html" 
+                  >Trang chủ</a
+                >
               </li>
+              <li class="muc"><a class="daumuc" href="../Quyen/ao_dieu_hoa.html">Áo điều hoà</a></li>
+              <li class="muc"><a class="daumuc" href="../maianh/aosuoiam.html">Áo sưởi ấm</a></li>
               <li class="muc">
-                <a class="daumuc" href="">Áo điều hoà</a>
-              </li>
-              <li class="muc">
-                <a class="daumuc" href="" id="selected">Áo sưởi ấm</a>
-              </li>
-              <li class="muc">
-                <a class="daumuc" href=""
-                  >Phụ kiện <i class="fa fa-angle-down"></i
-                ></a>
+                <a class="daumuc" href="">Phụ kiện <i class="fa fa-angle-down"></i></a>
                 <div class="box_submenu">
                   <ul>
                     <li><a href="">Phụ kiện Pin,quạt sạc</a></li>
-                    <li><a href="">Áo rời(không phụ kiện)</a></li>
+                    <li><a href="../hồng/aoroi.html">Áo rời(không phụ kiện)</a></li>
                   </ul>
                 </div>
               </li>
-              <li class="muc">
-                <a class="daumuc" href="" id="bogach"
+              <li class="muc"  >
+                <a class="daumuc" href=""  id="selected"
                   >Chính sách <i class="fa fa-angle-down"></i
                 ></a>
                 <script>
                   document
-                    .getElementById("bogach")
+                    .getElementById("selected")
                     .addEventListener("click", function (event) {
-                      event.preventDefault();
+                      event.preventDefault(); 
                     });
                 </script>
                 <div class="box_submenu">
                   <ul>
-                    <li>
-                      <a href="../maianh/chinhsachbaohanh.html"
-                        >chính sách bảo hành</a
-                      >
-                    </li>
+                    <li><a href="../maianh/chinhsachbaohanh.html">chính sách bảo hành</a></li>
                     <li><a href="">chính sách kiểm hàng</a></li>
-                    <li><a href="">chính sách vận chuyển</a></li>
+                    <li><a href="../maianh/chinhsachvanchuyen.html">chính sách vận chuyển</a></li>
                     <li><a href="">chính sách đổi trả hàng và hoàn tiền</a></li>
                     <li>
                       <a href=""
@@ -148,142 +133,18 @@
       </nav>
     </div>
     <div class="header_space"></div>
-    <div class="main">
-      <div class="sanphamvatintuc">
-        <div class="sanphamnoibat">
-          <div class="tieudetsp">
-            <h1 style="text-align: center"><i>Áo Sưởi Ấm</i></h1>
-          </div>
-          <div class="sapxep">
-            <form class="sapxepvitri" method="get">
-              <select name="orderby" class="orderby">
-                <option value="menu_order" selected="selected">
-                  Sắp xếp theo
-                </option>
-                <option value="popularity">Bán nhiều nhất</option>
-                <option value="date">Giảm giá</option>
-                <option value="price">Giá từ thấp đến cao</option>
-                <option value="price-desc">Giá từ cao xuống thấp</option>
-              </select>
-              <input type="hidden" name="paged" value="1" />
-            </form>
-          </div>
-          <div class="listsanphamchitiet">
-            <div class="product">
-              <div class="anhsanpham">
-                <p style="text-align: center">
-                  <a href="">
-                    <img class="imgsanpham" src="" alt="" />
-                  </a>
-                </p>
-                <!-- <div class="giamgia">
-                  <b>-32%</b>
-                </div> -->
-              </div>
-              <div class="content_product">
-                <div class="mtsp">
-                  <div class="mt">
-                    <b><a href=""> Áo Sưởi Ấm Azuki Raincoat Chống mưa Tuyết, Chạy pin 24000mah </a> </b>
-                  </div>
-                  <div class="price">
-                    <p>
-                      <span class="giadagiam">1.650.000₫</span>
-                    </p>
-                  </div>
-                  <div class="count_sell">
-                    <p>Đã bán <b>323</b> sản phẩm</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <div class="anhsanpham">
-                <p style="text-align: center">
-                  <a href="">
-                    <img class="imgsanpham" src="" alt="" />
-                  </a>
-                </p>
-              </div>
-              <div class="content_product">
-                <div class="mtsp">
-                  <div class="mt">
-                    <b><a href=""> Áo Sưởi Ấm Azuki Raincoat Chống mưa Tuyết mới nhất 2022 </a> </b>
-                  </div>
-                  <div class="price">
-                    <p>
-                      <span class="giadagiam">1.650.000₫</span>
-                    </p>
-                  </div>
-                  <div class="count_sell">
-                    <p>Đã bán <b>90</b> sản phẩm</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product">
-              <div class="anhsanpham">
-                <p style="text-align: center">
-                  <a href="">
-                    <img class="imgsanpham" src="" alt="" />
-                  </a>
-                </p>
-                <div class="giamgia"></div>
-              </div>
-              <div class="content_product">
-                <div class="mtsp">
-                  <div class="mt">
-                    <b><a href="">Áo Sưởi Ấm Azuki Chính hãng loại Siêu Nhẹ Pin 20000mah </a> </b>
-                  </div>
-                  <div class="price">
-                    <p>
-                      <span class="giadagiam">1.470.000₫</span>
-                    </p>
-                  </div>
-                  <div class="count_sell">
-                    <p>Đã bán <b>69</b> sản phẩm</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="entry-content">
+      <link rel="stylesheet" href="./css/chinhsach.css" />
+      
+      <h2>CHÍNH SÁCH KIỂM HÀNG</h2>
+      <p>Khi khách hàng nhận hàng, AZUKI không có chính sách kiểm hàng trước khi nhận. Sau khi nhận hàng, Quý khách nên quay video trong quá trình mở hộp nhận hàng và phản hồi ngay cho chúng tôi, bên chúng tôi sẽ tiến hành khắc phục đổi cho khách hàng.</p>
+      <p>Nếu phát sinh những vấn đề ngoài ý muốn về phía Khách hàng, AZUKI sẽ hỗ trợ linh động giải quyết trong các trường hợp:</p>
+      <li>Địa chỉ không chính xác</li>
+      <li>Khách muốn hẹn lịch giao hàng</li>
+      <p>Những trường hợp bất khả kháng như thiên tai, tai nạn giao thông, … AZUKI sẽ luôn hỗ trợ và đảm bảo quyền lợi của Quý Khách.</p>
+      <p>Mọi thắc mắc và góp ý vui lòng liên hệ: 08888 323 68 hoặc Email: <a href="mailto:Uniontek.touyen@gmail.com">Huonglkt2310@gmail.com</a></p>
 
-            <div class="product">
-              <div class="anhsanpham">
-                <p style="text-align: center">
-                  <a href="">
-                    <img class="imgsanpham" src="" alt="" />
-                  </a>
-                </p>
-                <div class="giamgia"></div>
-              </div>
-              <div class="content_product">
-                <div class="mtsp">
-                  <div class="mt">
-                    <b
-                      ><a href="">Áo Sưởi Ấm Azuki Chính hãng loại Siêu Nhẹ Pin 24000mah</a>
-                    </b>
-                  </div>
-                  <div class="price">
-                    <p>
-                      <span class="giadagiam">1.250.000₫</span>
-                    </p>
-                  </div>
-                  <div class="count_sell">
-                    <p>Đã bán <b>188</b> sản phẩm</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="sotrang">
-            <ul class="page-numbers">
-              <li><a class="page-numbers" href="#">&laquo; </a></li>
-              <li><span class="page-numbers current">1</span></li>
-              <li><a class="page-numbers" href="#">2</a></li>
-              <li><a class="page-numbers" href="#"> &raquo;</a></li>
-            </ul>
-          </div> -->
-        </div>
-      </div>
+    </div>
     </div>
     <div class="footer">
       <div class="thongtinfooter">
