@@ -31,121 +31,140 @@
     />
   </head>
   <body>
-    <div class="header">
-      <div class="linkdau">
-        <a href="../hồng/gioithieu.html" class="linkdaucon">Giới thiệu</a>
-        <a href="../hồng/tintuc.html" class="linkdaucon">Tin tức</a>
-        <a href="../maianh/lienhe.html" class="linkdaucon">Liên hệ</a>
-        <a href="../hồng/dangnhap.html" class="linkdaucon">Đăng nhập</a>
+    <body>
+      <div class="header">
+        <div class="linkdau">
+          <a href="../hồng/gioithieu.html" class="linkdaucon">Giới thiệu</a>
+          <a href="../hồng/tintuc.html" class="linkdaucon">Tin tức</a>
+          <a href="../maianh/lienhe.html" class="linkdaucon">Liên hệ</a>
+          <a href="../hồng/dangnhap.html" class="linkdaucon">Đăng nhập</a>
+        </div>
+        <div class="congcu">
+          <div class="congcucon1" id="logovachu">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../img/logoazuki.png" alt=""
+              /></a>
+            </div>
+            <div class="chulogo">
+              <h3>ÁO ĐIỀU HÒA AZUKI</h3>
+              <p>Thương hiệu chất lượng số 1 Việt Nam</p>
+            </div>
+          </div>
+          <div class="search-text">
+            <div id="input">
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Tìm kiếm sản phẩm...."
+              />
+            </div>
+            <div id="button">
+              <button type="submit" style="color: black" id="search-button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="giohang_lienhe">
+            <div class="dienthoai">
+              <div class="icondienthoai">
+                <i class="fa fa-phone" style="font-size: 35px"></i>
+              </div>
+              <div class="motadienthoai">
+                <p class="">
+                  HOTLINE <br />
+                  <span>0888 832 368</span>
+                </p>
+              </div>
+            </div>
+            <div class="giohang">
+              <div class="icongiohang">
+                <i class="fa fa-shopping-cart" style="font-size: 35px"></i>
+              </div>
+              <div class="motagiohang">
+                <p class="">
+                  GIỎ HÀNG <br />
+                  <span> 0 sản phẩm</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="danhmuc">
+          <div class="box_menu">
+            <nav>
+              <ul>
+                <li class="muc">
+                  <a class="daumuc" href="../index.html">Trang chủ</a>
+                </li>
+                <li class="muc">
+                  <a class="daumuc" href="../Quyen/ao_dieu_hoa.html" id="selected"
+                    >Áo điều hoà</a
+                  >
+                </li>
+                <li class="muc">
+                  <a class="daumuc" href="../maianh/aosuoiam.html">Áo sưởi ấm</a>
+                </li>
+                <li class="muc">
+                  <a class="daumuc" href="../Thế/trangphukien.html"
+                    >Phụ kiện <i class="fa fa-angle-down"></i
+                  ></a>
+                  <div class="box_submenu">
+                    <ul>
+                      <li>
+                        <a href="../Thế/trangphukien2.html"
+                          >Phụ kiện Pin,quạt sạc</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../hồng/aoroi.html">Áo rời(không phụ kiện)</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="muc">
+                  <a class="daumuc" href="" id="bogach"
+                    >Chính sách <i class="fa fa-angle-down"></i
+                  ></a>
+                  <script>
+                    document
+                      .getElementById("bogach")
+                      .addEventListener("click", function (event) {
+                        event.preventDefault();
+                      });
+                  </script>
+                  <div class="box_submenu">
+                    <ul>
+                      <li>
+                        <a href="../maianh/chinhsachbaohanh.html"
+                          >chính sách bảo hành</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../maianh/chinhsachkiemhang.html"
+                          >chính sách kiểm hàng</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../maianh/chinhsachvanchuyen.html"
+                          >chính sách vận chuyển</a
+                        >
+                      </li>
+                      <li><a href="">chính sách đổi trả hàng và hoàn tiền</a></li>
+                      <li>
+                        <a href=""
+                          >chính sách bảo vệ thông tin cá nhân của người tiêu dùng
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
       </div>
-      <div class="congcu">
-        <div class="congcucon1" id="logovachu">
-          <div class="logo">
-            <a href="../index.html"
-              ><img src="../img/logoazuki.png" alt=""
-            /></a>
-          </div>
-          <div class="chulogo">
-            <h3>ÁO ĐIỀU HÒA AZUKI</h3>
-            <p>Thương hiệu chất lượng số 1 Việt Nam</p>
-          </div>
-        </div>
-        <div class="search-text">
-          <div id="input">
-            <input
-              id="search-input"
-              type="text"
-              placeholder="Tìm kiếm sản phẩm...."
-            />
-          </div>
-          <div id="button">
-            <button type="submit" style="color: black" id="search-button">
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </div>
-        <div class="giohang_lienhe">
-          <div class="dienthoai">
-            <div class="icondienthoai">
-              <i class="fa fa-phone" style="font-size: 35px"></i>
-            </div>
-            <div class="motadienthoai">
-              <p class="">
-                HOTLINE <br />
-                <span>0888 832 368</span>
-              </p>
-            </div>
-          </div>
-          <div class="giohang">
-            <div class="icongiohang">
-              <i class="fa fa-shopping-cart" style="font-size: 35px"></i>
-            </div>
-            <div class="motagiohang">
-              <p class="">
-                GIỎ HÀNG <br />
-                <span> 0 sản phẩm</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="danhmuc">
-        <div class="box_menu">
-          <nav>
-            <ul>
-              <li class="muc">
-                <a class="daumuc" href="../index.html">Trang chủ</a>
-              </li>
-              <li class="muc">
-                <a class="daumuc" href="../Quyen/ao_dieu_hoa.html" id="selected">Áo điều hoà</a>
-              </li>
-              <li class="muc"><a class="daumuc" href="../maianh/aosuoiam.html">Áo sưởi ấm</a></li>
-              <li class="muc">
-                <a class="daumuc" href="../Thế/trangphukien.html"
-                  >Phụ kiện <i class="fa fa-angle-down"></i
-                ></a>
-                <div class="box_submenu">
-                  <ul>
-                    <li><a href="../Thế/trangphukien2.html">Phụ kiện Pin,quạt sạc</a></li>
-                    <li><a href="../hồng/aoroi.html">Áo rời(không phụ kiện)</a></li>
-                  </ul> 
-                </div>
-              </li>
-              <li class="muc">
-                <a class="daumuc" href="" id="bogach"
-                  >Chính sách <i class="fa fa-angle-down"></i
-                ></a>
-                <script>
-                  document
-                    .getElementById("bogach")
-                    .addEventListener("click", function (event) {
-                      event.preventDefault();
-                    });
-                </script>
-                <div class="box_submenu">
-                  <ul>
-                    <li>
-                      <a href="../maianh/chinhsachbaohanh.html"
-                        >chính sách bảo hành</a
-                      >
-                    </li>
-                    <li><a href="">chính sách chuyển hàng</a></li>
-                    <li><a href="">chính sách vận chuyển</a></li>
-                    <li><a href="">chính sách đổi trả hàng và hoàn tiền</a></li>
-                    <li>
-                      <a href=""
-                        >chính sách bảo vệ thông tin cá nhân của người tiêu dùng
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </nav>
-    </div>
-    <div class="header_space"></div>
+      <div class="header_space"></div>
     <div class="main">
       <div class="sanphamvatintuc">
         <div class="sanphamnoibat">
