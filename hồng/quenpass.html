@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quên mật khẩu</title>
-    <link rel="stylesheet" href="./css/quenpass.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/dangnhaps.css">
+    <link href="/hồng/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-                <form class="login100-form validate-form" id="forgotPasswordForm">
-                    <span class="login100-form-title p-b-49">Quên mật khẩu</span>
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Email">
-                      <input class="input100" type="email" name="email" placeholder="Email">
-                      <span class="focus-input100" data-symbol="&#xf206;"></span>
-                    </div>
-                  
-                    <div class="container-login100-form-btn">
-                        <div class="wrap-login100-form-btn">
-                            <div class="login100-form-bgbtn"></div>
-                            <button id="forgotPasswordBtn" class="login100-form-btn" type="submit">Gửi yêu cầu</button>
-                        </div>
-                    </div>
-                    <div class="txt1 text-center p-t-54 p-b-20"><span>Hoặc đăng nhập bằng</span></div>
-                    <div class="flex-c-m">
-                        <a href="#" class="login100-social-item bg1"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="login100-social-item bg2"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="login100-social-item bg3"><i class="fa fa-google"></i></a>
-                    </div>
-                    <div class="flex-col-c p-t-155">
-                        <span class="txt1 p-b-17">Quay lại đăng nhập</span>
-                        <a href="./dangnhap.html" class="txt2">Đăng nhập</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <script src="./js/quenpass.js"></script>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('img/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form-1 validate-form" id="loginForm">
+					<span class="login100-form-title">
+						Quên mật khẩu
+					</span>
+					<div class="wrap-input100 " data-validate = "Username is reauired">
+						<span class="label-input100">Tên người dùng</span>
+						<input class="input100" type="text" name="username" placeholder="Tên người dùng">
+						<span class="focus-input100" data-symbol="&#xf007;"></span>
+					</div>
+              
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Gửi yêu cầu
+							</button>
+						</div>
+					</div>
+
+					<div class="txt1">
+						<span>
+							Hoặc đăng nhập bằng
+						</span>
+					</div>
+
+					<div class="flex-c-m">
+						<a href="#" class="login100-social-item bg1">
+							<i class="fa-brands fa-facebook-f"></i> 
+						</a>
+
+						<a href="#" class="login100-social-item bg2">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+
+						<a href="#" class="login100-social-item bg3">
+							<i class="fa-brands fa-google"></i>
+						</a>
+					</div>
+
+					<div class="flex-col-c1 ">
+						<span class="p-b-17">
+							Quay lại trang
+						</span>
+						<a href="#" >
+							<span>Đăng nhập</span> 
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

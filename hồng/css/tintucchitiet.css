@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.entry-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.entry-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0779e4;
+}
+
+.entry-meta {
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.entry-content {
+    background: #fff;
+    padding: 7%;
+    padding-top: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.entry-content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.entry-content p {
+    margin: 20px 0;
+}
+
+.entry-content ul {
+    list-style: disc inside;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.entry-content ul li {
+    
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+/*  */
+.container-tintucct {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+    margin-top: 150px;
+}
+
+.main-content {
+    width: 80%;
+}
+
+.img-tintucct {
+    position: relative;
+    width: 100%;
+}
+
+.img-tintucct img {
+    display: block;
+    width: 100%;
+    height: auto !important;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.below-content {
+    margin-top: 20px;
+}
+
+.related-news {
+    width: 20%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.related-news h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.related-news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.related-news .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.related-news .news-item img {
+    margin-right: 15px;
+}
+
+.related-news .news-item h4 {
+    margin: 0;
+    font-size: 0.9rem;
+}
