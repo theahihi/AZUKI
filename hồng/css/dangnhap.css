@@ -1,262 +1,280 @@
-/* Reset CSS */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
 }
 
+a {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+  text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+  color: #a64bf4;
+}
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+
+
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.txt1 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.txt2 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.bg1 {background-color: #3b5998}
+.bg2 {background-color: #1da1f2}
+.bg3 {background-color: #ea4335}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
 .limiter {
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .container-login100 {
-  width: 90%;
-  max-width: 400px;
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
   background-size: cover;
-  background-position: center;
-  position: relative;
-  background-color: #fff;
-
 }
 
 .wrap-login100 {
-  width: 100%;
-  background-color: #fff;
+  width: 500px;
+  background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 50px 30px;
+  padding: 55px;
 }
+
+
+/*------------------------------------------------------------------
+[ Form ]*/
 
 .login100-form {
   width: 100%;
 }
 
 .login100-form-title {
-  font-family: Poppins-Medium;
-  font-size: 24px;
-  color:black;
-  line-height: 1.2;
-  text-align: center;
-  width: 100%;
   display: block;
-  padding-bottom: 20px;
+  font-size: 39px;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 49px;
 }
 
 .wrap-input100 {
   width: 100%;
   position: relative;
-  border-bottom: 2px solid black;
-  margin-bottom: 30px;
+  border-bottom: 2px solid #d9d9d9;
+  margin-bottom: 23px;
+}
+
+.label-input100 {
+  font-size: 15px;
+  color: #555555;
+  display: block;
 }
 
 .input100 {
-  font-family: Poppins-Regular;
   font-size: 15px;
-  color:black;
+  color: #555555;
   line-height: 1.2;
   display: block;
   width: 100%;
   background: transparent;
-  height: 45px;
-  padding: 0 5px;
+  height: 50px;
+  padding: 0 10px 0 30px;
   border: none;
-  border-bottom: 2px solid black;
-  outline: none;
+  border-bottom: 0px solid #adadad;
 }
 
 .input100:focus {
-  border-bottom: 2px solid #4CAF50;
+  outline: none;
 }
 
 
-.label-input100 {
-  display: none;
-}
-
-.focus-input100 {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  color: black;
-  font-size: 18px;
-  padding-left: 5px;
-}
-
-.input100:focus + .focus-input100 {
-  top: -10px;
-}
-
-.text-right {
-  text-align: right;
-  margin-bottom: 15px;
-}
-
-.text-right a {
-  color: black;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.text-right a:hover {
-  text-decoration: underline;
-}
-
-.container-login100-form-btn {
-  width: 100%;
+.focus-input100::after {
+  content: attr(data-symbol);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 22px;
+  color: #adadad;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 40px; 
-  margin-bottom: 20px; 
+  justify-content: center;
+  position: absolute;
+  height: calc(100% - 20px);
+  bottom: 0;
+  left: 0;
+  padding-top: 3px;
+  transition: all 0.4s;
 }
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #7f7f7f;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100::before,
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+.input100:focus + .focus-input100::after,
+.has-val.input100 + .focus-input100::after {
+  color: #a64bf4;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
 
 .wrap-login100-form-btn {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+
 }
 
 .login100-form-bgbtn {
   position: absolute;
   z-index: -1;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  background-color: #080162; 
-  top: -10px;
+  width: 300%;
+  height: 100%;
+  background: #a64bf4;
+  background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  top: 0;
+  left: -100%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
   transition: all 0.4s;
-  border-radius: 10px;
 }
 
 .login100-form-btn {
-  font-family: Poppins-Medium;
-  font-size: 15px;
-  color: #fff; 
+  font-size: 16px;
+  color: #fff;
   line-height: 1.2;
-  
-  display: flex;
+  text-transform: uppercase;
+  display: -moz-box;
+  display: -ms-flexbox;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
   width: 100%;
   height: 50px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
+}
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+  left: 0;
+}
+
+
+.validate-input {
   position: relative;
-  z-index: 1;
-  transition: all 0.4s;
-  background-color: #16277b;
 }
-
-.login100-form-btn:hover .login100-form-bgbtn {
-  width: calc(100% + 40px);
-  height: calc(100% + 40px);
-  left: -20px;
-  top: -20px;
-  background-color: #321a9a; /* Màu nền của button khi hover */
-}
-
-.txt1 {
-  font-family: Poppins-Regular;
-  font-size: 15px;
-  color: black;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.txt1 span {
-  font-family: Poppins-Medium;
-  color:black;
-  
-}
-
-.flex-c-m {
+.login100-social-item {
+  font-size: 25px;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; 
-  margin-bottom: 20px; 
-}
-
-.flex-c-m a {
-  text-decoration: none;
-  color: black;
-  font-size: 24px;
-  margin: 0 10px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px; 
-  height: 40px; 
-  border-radius: 50%; 
-  transition: background-color 0.3s, color 0.3s; 
-}
-
-.flex-c-m a:hover {
-  background-color: #f0f0f0; 
-  color: #111;
-}
-
-
-.login100-social-item {
-  font-size: 24px;
-  margin: 0 10px;
-  color: black;
-  text-decoration: none;
-  transition: color 0.4s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 .login100-social-item:hover {
-  color: #111376;
+  color: #fff;
+  background-color: #333333;
 }
-.flex-col-c.p-t-155 {
+
+
+.text-right {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+
+.flex-c-m {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.flex-col-c {
+	display: flex;
+	-webkit-flex-direction: column;
+	align-items: center;
+}
+/* quen mat khau */
+.flex-col-c1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  
+  margin-top: 20px;
+  justify-content: space-between;
 }
-
-.flex-col-c.p-t-155 .txt1 {
-  font-family: Poppins-Regular;
-  font-size: 15px;
-  color: black;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 10px; 
-}
-
-.flex-col-c.p-t-155 .txt2 {
-  font-family: Poppins-Medium;
-  font-size: 16px;
-  color: black;
-  text-decoration: underline;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.flex-col-c.p-t-155 .txt2:hover {
-  color: #010d4a; 
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-image: url('../../img/footer.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.login100-form-1{
+  width: 100%;
+  line-height: 2;
 }
