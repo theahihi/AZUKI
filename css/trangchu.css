@@ -46,6 +46,7 @@ a {
   margin: 0 auto;
   max-width: 1200px;
 }
+
 .congcucon1 {
   width: 427px;
   display: flex;
@@ -282,12 +283,12 @@ nav.danhmuc {
   justify-content: center;
 }
 .imgslide {
-  width: 1520px;
+  width: 1480px;
   height: 850px;
 }
 
 .slide-show {
-  width: 1520px;
+  width: 1480px;
   overflow: hidden;
   position: relative;
 }
@@ -366,10 +367,10 @@ nav.danhmuc {
   margin-top: 20px;
 }
 .sanphamnoibat {
-  flex-basis: 75%;
+  flex-basis: 60%;
 }
 .tintucnoibat {
-  flex-basis: 25%;
+  flex-basis: 40%;
 }
 .tieudesp {
   text-align: center;
@@ -411,7 +412,8 @@ nav.danhmuc {
   position: relative;
 }
 .tintucnoibat {
-  margin-left: 10px;
+  margin-left: 5px;
+  width: 345px;
 }
 .tintucnoibat h1 {
   background-color: rgb(6, 106, 156);
@@ -420,16 +422,27 @@ nav.danhmuc {
 }
 .listsanpham {
   display: grid;
-  grid-template-columns: 260px 260px 260px 260px;
+  grid-template-columns: 250px 250px 250px 250px;
+}
+@media (max-width: 1024px) {
+  .listsanpham {
+    grid-template-columns: repeat(auto-fill, minmax(239px, 1fr));
+    gap: 30px;
+  }
 }
 .product {
   margin-top: 40px;
   transition: 0.5s;
 }
+
 .anhsanpham {
   position: relative;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
 }
 .giamgia b {
   position: absolute;
@@ -446,7 +459,7 @@ nav.danhmuc {
   justify-content: center;
 }
 .mtsp {
-  width: 240px;
+  width: 230px;
   text-align: justify;
   background-color: rgb(6, 106, 156);
   color: white;
@@ -476,8 +489,8 @@ nav.danhmuc {
 }
 
 .product:hover .imgsanpham {
-  width: 260px;
-  height: 280px;
+  width: 240px;
+  height: 265px;
   box-shadow: 0px 0px 20px black;
 }
 .tieudetintuc {
@@ -500,9 +513,10 @@ nav.danhmuc {
 }
 .motatintuc {
   flex-basis: 60%;
-  width: 194px;
-  padding-left: 10px;
-  padding-top: 30px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-right: 45px;
+  text-align: justify;
 }
 
 .motatintuc a {
@@ -545,6 +559,12 @@ nav.danhmuc {
 .listaodieuhoa {
   display: grid;
   grid-template-columns: 280px 280px 280px 280px 280px;
+}
+@media (max-width: 1024px) {
+  .listaodieuhoa {
+    grid-template-columns: repeat(auto-fill, minmax(239px, 1fr));
+    gap: 30px;
+  }
 }
 
 .aodieuhoa .product .giamgia b {
@@ -618,6 +638,12 @@ nav.danhmuc {
 .truyenthongazuki {
   display: grid;
   grid-template-columns: 700px 700px;
+}
+@media (max-width: 1024px) {
+  .truyenthongazuki {
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    gap: 280px;
+  }
 }
 .khungnhapthongtin {
   height: 100px;
