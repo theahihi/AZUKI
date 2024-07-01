@@ -220,8 +220,11 @@ nav.danhmuc {
 .footer {
   background-image: url("../img/footer.jpg");
   background-color: rgb(6, 106, 156);
-  height: 410px;
+  height: 450px;
   justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .thongtinfooter {
