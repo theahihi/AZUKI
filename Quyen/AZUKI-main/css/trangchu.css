@@ -416,7 +416,7 @@ nav.danhmuc {
 .giamgia b {
   position: absolute;
   top: 2px;
-  right: 10px; /* Cách mép phải 10px */
+  right: -60px; /* Cách mép phải 10px */
   background-color: red;
   padding: 8px 6px 8px 6px;
   color: white;
@@ -545,6 +545,12 @@ nav.danhmuc {
   grid-template-columns: 400px 400px 400px;
   justify-content: center;
   gap: 20px;
+}
+@media (max-width: 1290px) {
+  .listsanphamchitiet {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+  }
 }
 .sotrang ul.page-numbers {
   display: flex;

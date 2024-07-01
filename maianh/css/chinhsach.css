@@ -3,6 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   width: 1024px;
+  text-align: justify;
 }
 body {
   text-align: justify;
@@ -11,7 +12,7 @@ body {
   color: black; /* Màu chữ */
   font-size: 24px; /* Kích thước chữ */
   font-weight: bold; /* Độ đậm của chữ */
-  text-align: left; /* Căn giữa chữ */
+  text-align: justify; /* Căn giữa chữ */
   margin-top: 20px; /* Khoảng cách bên trên */
   margin-bottom: 20px; /* Khoảng cách bên dưới */
 }
@@ -19,16 +20,17 @@ body {
   color: black; /* Màu chữ */
   font-size: 18px; /* Kích thước chữ */
   font-weight: bold; /* Độ đậm của chữ */
-  text-align: left; /* Căn giữa chữ */
+  text-align: justify; /* Căn giữa chữ */
   margin-top: 15px; /* Khoảng cách bên trên */
   margin-bottom: 15px; /* Khoảng cách bên dưới */
 }
 .entry-content p {
   color: black; /* Màu chữ */
-  font-size: 15px; /* Kích thước chữ */
-  text-align: left; /* Căn giữa chữ */
+  font-size: 16px; /* Kích thước chữ */
+  text-align: justify; /* Căn giữa chữ */
   margin-top: 12px; /* Khoảng cách bên trên */
   margin-bottom: 12px; /* Khoảng cách bên dưới */
+  line-height: 1.5; /* Khoảng cách dòng */
 }
 .entry-content a:link {
   text-decoration: none;
@@ -49,4 +51,6 @@ body {
 }
 .entry-content li{
   text-align: justify;
+  font-size: 16px;
+  line-height: 1.5; /* Khoảng cách dòng */
 }
