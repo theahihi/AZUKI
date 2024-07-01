@@ -1,8 +1,16 @@
-document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+document.getElementById('loginForm').addEventListener('submit', function(event) {
   event.preventDefault(); 
-
-  alert("Yêu cầu quên mật khẩu đã được gửi. Vui lòng kiểm tra email của bạn.");
-
   
-  window.location.href = "dangnhap.html";
+  // Lấy giá trị từ trường nhập liệu
+  var username = document.querySelector('input[name="username"]').value.trim();
+  
+  // Kiểm tra xem trường nhập liệu có được điền đầy đủ hay không
+  if (username === '') {
+      document.getElementById('errorMessage').style.display = 'block';
+      document.getElementById('successMessage').style.display = 'none';
+  } else {
+      document.getElementById('errorMessage').style.display = 'none';
+      document.getElementById('successMessage').style.display = 'block';
+      // Chuyển hướng hoặc xử lý thêm ở đây nếu cần thiết
+  }
 });
