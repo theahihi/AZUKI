@@ -529,3 +529,47 @@ p {
   width: 380px;
   height: 390px;
 }
+.section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.options,
+.sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option,
+.size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+.option span {
+  font-size: 14px;
+}
+
+.size {
+  padding: 12px 29px;
+  font-size: 16px;
+}
+.option.selected {
+  background-color: red;
+  color: white;
+}

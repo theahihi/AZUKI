@@ -1,10 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     /* background-color: #f4f4f4; */
 }
+
+
 
 .container {
     width: 80%;
@@ -144,5 +148,10 @@ footer {
 
 .related-news .news-item h4 {
     margin: 0;
-    font-size: 0.9rem;
+    
+}
+.h4{
+    text-align: justify;
+    font-size: 14px;
+    font-family: roboto;
 }
