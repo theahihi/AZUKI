@@ -27,19 +27,8 @@
     />
     <script>
       function setZoom() {
-        const minWidth = 800; // Độ rộng tối thiểu mà bạn muốn trang web có
-        const screenWidth = window.innerWidth;
-        let zoomLevel = 1; // Mặc định là 100%
-
-        if (screenWidth < minWidth) {
-          zoomLevel = screenWidth / minWidth;
-        }
-
-        document.body.style.zoom = zoomLevel;
+        document.body.style.zoom = "85%";
       }
-
-      window.onload = setZoom;
-      window.onresize = setZoom; // Đảm bảo khi thay đổi kích thước cửa sổ thì zoom cũng được điều chỉnh
     </script>
   </head>
   <body onload="setZoom()">
