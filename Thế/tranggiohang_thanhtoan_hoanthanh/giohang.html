@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng </title>
+    <link rel="stylesheet" href="../../css/trangchu.css" />
+    <link rel="stylesheet" href="../../css/chitietsanpham.css" />
+    <link
+      rel="shortcut icon"
+      href="../../img/faviconazuki.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="../img/faviconazuki.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../css/giohang.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="linkdau">
+        <a href="../../hồng/gioithieu.html" class="linkdaucon">Giới thiệu</a>
+        <a href="../../hồng/tintuc.html" class="linkdaucon">Tin tức</a>
+        <a href="../../maianh/lienhe.html" class="linkdaucon">Liên hệ</a>
+        <a href="../../hồng/dangnhap.html" class="linkdaucon">Đăng nhập</a>
+      </div>
+      <div class="congcu">
+        <div class="congcucon1" id="logovachu">
+          <div class="logo">
+            <a href="../../index.html"
+              ><img src="../../img/logoazuki.png" alt=""
+            /></a>
+          </div>
+          <div class="chulogo">
+            <h3>ÁO ĐIỀU HÒA AZUKI</h3>
+            <p>Thương hiệu chất lượng số 1 Việt Nam</p>
+          </div>
+        </div>
+        <div class="search-text">
+          <div id="input">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Tìm kiếm sản phẩm...."
+            />
+          </div>
+          <div id="button">
+            <button type="submit" style="color: black" id="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="giohang_lienhe">
+          <div class="dienthoai">
+            <div class="icondienthoai">
+              <i class="fa fa-phone" style="font-size: 35px"></i>
+            </div>
+            <div class="motadienthoai">
+              <p class="">
+                HOTLINE <br />
+                <span>0888 832 368</span>
+              </p>
+            </div>
+          </div>
+          <div class="giohang">
+            <div class="icongiohang">
+<a href="../tranggiohang_thanhtoan_hoanthanh/giohang.html">
+                <i class="fa fa-shopping-cart" style="font-size: 35px"></i>
+  
+</a>            </div>
+            <div class="motagiohang">
+              <p class="">
+                GIỎ HÀNG <br />
+                <span> 0 sản phẩm</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="danhmuc">
+        <div class="box_menu">
+          <nav>
+            <ul>
+              <li class="muc">
+                <a class="daumuc" href="../../index.html">Trang chủ</a>
+              </li>
+              <li class="muc">
+                <a class="daumuc" href="../../Quyen/ao_dieu_hoa.html"
+                  >Áo điều hoà</a
+                >
+              </li>
+              <li class="muc">
+                <a class="daumuc" href="../../maianh/aosuoiam.html"
+                  >Áo sưởi ấm</a
+                >
+              </li>
+              <li class="muc">
+                <a class="daumuc" href="../trangtatcaphukien1.html"
+                  >Phụ kiện <i class="fa fa-angle-down"></i
+                ></a>
+                <div class="box_submenu">
+                  <ul>
+                    <li>
+                      <a href="../trangphukien.html">Phụ kiện Pin,quạt sạc</a>
+                    </li>
+                    <li>
+                      <a href="../../hồng/aoroi.html">Áo rời(không phụ kiện)</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="muc">
+                <a class="daumuc" href="" id="bogach"
+                  >Chính sách <i class="fa fa-angle-down"></i
+                ></a>
+                <script>
+                  document
+                    .getElementById("bogach")
+                    .addEventListener("click", function (event) {
+                      event.preventDefault();
+                    });
+                </script>
+                <div class="box_submenu">
+                  <ul>
+                    <li>
+                      <a href="../../maianh/chinhsachbaohanh.html"
+                        >chính sách bảo hành</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../maianh/chinhsachkiemhang.html"
+                        >chính sách kiểm hàng</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../maianh/chinhsachvanchuyen.html"
+                        >chính sách vận chuyển</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../maianh/chinhsachdoitrahanghoantien.html"
+                        >chính sách đổi trả hàng và hoàn tiền</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../maianh/chinhsachbaovethongtincanhan.html"
+                        >chính sách bảo vệ thông tin cá nhân của người tiêu dùng
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <div class="header_space"></div>
+    <div class="luachon">
+      <div class="chon_giohang">
+        <a href=""><h2 id="chon">Giỏ hàng</h2></a>
+      </div>
+      <div class="muiten">
+        <h2><i class="fas fa-angle-right"></i></h2>
+      </div>
+      <div class="chon_thanhtoan">
+        <a href="./thanhtoan.html"><h2>Chi tiết thanh toán</h2></a>
+      </div>
+      <div class="muiten">
+        <h2><i class="fas fa-angle-right"></i></h2>
+      </div>
+      <div class="chon_hoanthanhthanhtoan">
+        <h2>Hoàn thành thanh toán</h2>
+      </div>
+    </div>
+    <div class="khunggiohang">
+      <div class="sanphamtronggiohang">
+        <div class="table_san_pham">
+          <table style="border-collapse: collapse">
+            <tr class="dongtieude">
+              <td style=" text-align: center">
+                <h3>Sản Phẩm</h3>
+              </td>
+              <td style="text-align: center"><h3>Giá</h3></td>
+              <td style="text-align: center"><h3>Số lượng</h3></td>
+              <td style="text-align: center"><h3>Tạm tính</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="dong_san_pham">
+                  <div class="huysp"><p>X</p></div>
+                  <div class="anhsp">
+                    <img
+                      src="../imgchitietsanpham/bopkex9/anhchitiet/slide1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="tensp">
+                    <a href="">
+                      Bộ phụ kiện Điều Hòa Azuki EX-9 New Season 2024 pin
+                      25.500mah</a
+                    >
+                  </div>
+                </div>
+              </td>
+              <td><b>1.270.000₫</b></td>
+              <td>
+                <div class="soluongsp_giohang">
+                  <button onclick="decreaseQuantity1()" class="giamsp">
+                    <p>-</p>
+                  </button>
+                  <input
+                    type="number"
+                    id="sp1"
+                    name="quantity"
+                    min="1"
+                    max="10000"
+                    value="1"
+                    step="1"
+                    class="soluong"
+                  />
+                  <button onclick="increaseQuantity1()" class="tangsp">
+                    <p>+</p>
+                  </button>
+                </div>
+              </td>
+              <td><b>1.270.000₫</b></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="dong_san_pham">
+                  <div class="huysp"><p>X</p></div>
+                  <div class="anhsp">
+                    <img src="../../hồng/img/ao2024.jpg" alt="" />
+                  </div>
+                  <div class="tensp">
+                    <a href="">
+                      Áo điều hòa Azuki dài tay 2024 Size: M, Màu: xanh than</a
+                    >
+                  </div>
+                </div>
+              </td>
+              <td><b>800.000₫</b></td>
+              <td>
+                <div class="soluongsp_giohang">
+                  <button onclick="decreaseQuantity2()" class="giamsp">
+                    <p>-</p>
+                  </button>
+                  <input
+                    type="number"
+                    id="sp2"
+                    name="quantity"
+                    min="1"
+                    max="10000"
+                    value="2"
+                    step="1"
+                    class="soluong"
+                  />
+                  <button onclick="increaseQuantity2()" class="tangsp">
+                    <p>+</p>
+                  </button>
+                </div>
+              </td>
+              <td><b>1.600.000₫</b></td>
+            </tr>
+            <tr class="ngatdong">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="xemsp_capnhat">
+          <div class="tieptucxemsp">
+            <a href="../trangtatcaphukien1.html"><h3>← Xem lại sản phẩm</h3></a>
+          </div>
+          <div class="capnhatsp" onclick="capnhatgiohang()">
+            <h3>Cập nhật sản phẩm</h3>
+          </div>
+        </div>
+      </div>
+      <div class="tongtientronggiohang">
+        <div class="tieudetongtien">
+          <h2>Tổng tiền trong giỏ hàng</h2>
+          <hr />
+        </div>
+        <div class="tamtinh">
+          <div class="loptamtinh">
+            <div class="tieudetamtinh"><p>Tạm tính</p></div>
+            <div class="tientamtinh"><p>2.870.000₫</p></div>
+          </div>
+          <hr />
+        </div>
+        <div class="tamtinh">
+          <div class="loptamtinh">
+            <div class="tieudetamtinh"><p>Tổng tiền</p></div>
+            <div class="tientamtinh"><p>2.870.000₫</p></div>
+          </div>
+          <hr />
+        </div>
+        <div class="thanhtoan">
+          <a href=""><p>Thanh toán giỏ hàng  ⭢ </p></a>
+        </div>
+        <div class="tieude_uudai">
+          <p><i class="fas fa-tag icon-uu-dai"></i></i> Ưu đãi sản phẩm</p>
+          <hr>
+        </div>
+        <div class="nhap_uudai">
+            <input type="text" id="uudai" placeholder="Nhập mã ưu đãi..">
+        </div>
+        <div class="apdunguudai" onclick="applyDiscount()">
+            <p>áp dụng ưu đãi</p>
+        </div>
+        <div id="message" class="message"></div>
+      </div>
+    </div>
+    <div class="footer">
+        <div class="thongtinfooter">
+          <div class="ftthoongtin">
+            <img
+              src="../../img/logotrangazuki.png"
+              alt=""
+              style="width: 180px; height: 70px"
+            />
+            <p class="list">
+              <i class="fas fa-map-marker-alt"></i> <b>Địa chỉ</b>: 175 Thượng
+              Đình - Thanh Xuân - Hà Nội
+            </p>
+            <p></p>
+            <p class="list">
+              <i class="fa fa-phone"></i> <b>Hotline</b>: 0888 832 368
+            </p>
+            <p></p>
+            <p class="list">
+              <i class="fas fa-envelope"></i> <b>Email</b>: Huonglkt2310@gmail.com
+            </p>
+            <p></p>
+            <p class="list">
+              <i class="fas fa-clock"></i> <b>Thời gian làm việc</b>: từ 8:30 đến
+              22:00 các ngày trong tuần từ thứ 2 đến chủ nhật
+            </p>
+  
+            <a href="http://online.gov.vn/Home/WebDetails/111558" target="_blank">
+              <img
+                src="../../img/bocongthuong.jpg"
+                style="
+                  width: 300px;
+                  height: 100px;
+                  border-radius: 20px;
+                  margin-top: 20px;
+                  margin-right: -20px;
+                "
+                alt=""
+              />
+            </a>
+          </div>
+  
+          <div class="sanpham">
+            <h3>SẢN PHẨM</h3>
+            <ul>
+              <li class="list">
+                <a href="./Quyen/ao_dieu_hoa.html">Áo điều hoà AZUKI</a>
+              </li>
+              <li class="list"><a href="">Áo điều hoà AZUKI 2024 </a></li>
+              <li class="list">
+                <a href="./Thế/trangphukien.html">Phụ kiện áo điều hoà AZUKI</a>
+              </li>
+              <li class="list">
+                <a href="./maianh/aosuoiam.html">Áo sưởi ấm AZUKI</a>
+              </li>
+            </ul>
+          </div>
+          <div class="chinhsach">
+            <h3>CHÍNH SÁCH</h3>
+            <ul>
+              <li class="list">
+                <a href="./maianh/chinhsachbaohanh.html">Chính sách bảo hành</a>
+              </li>
+              <li class="list">
+                <a href="./maianh/chinhsachkiemhang.html">Chính sách kiểm hàng</a>
+              </li>
+              <li class="list">
+                <a href="./maianh/chinhsachvanchuyen.html"
+                  >Chính sách vận chuyển</a
+                >
+              </li>
+              <li class="list">
+                <a href="">Chính sách đổi trả hàng và hoàn tiền</a>
+              </li>
+              <li class="list">
+                <a href="">Chính sách bảo vệ thông tin cá nhân người tiêu dùng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mxhvamap">
+            <h3>MẠNG XÃ HỘI</h3>
+            <p class="mxh">
+              <a
+                href="https://www.facebook.com/aodieuhoanhatban.vn"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a
+                href="https://www.youtube.com/channel/UCAKx-vPjpsj8WAXJrVojHwQ"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+            <h3>BẢN ĐỒ</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14899.44182176282!2d105.8164776!3d20.9982301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9010663b27%3A0x7b46985b72a78709!2sC%C3%B4ng%20Ty%20TNHH%20Azuki%20International!5e0!3m2!1svi!2s!4v1718299474620!5m2!1svi!2s"
+              width="250"
+              height="250"
+              style="border: 0; margin-top: 20px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+    <script src="../../js/cuonheader.js"></script>
+    <script src="../../js/timkiem.js"></script>
+    <script src="../../js/giohang.js"></script>
+  </body>
+</html>
