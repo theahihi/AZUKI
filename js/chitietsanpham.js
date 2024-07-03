@@ -189,3 +189,34 @@ document.querySelector("form").addEventListener("submit", function (event) {
     }, 1000);
   }
 });
+// hover anh 
+const options = document.querySelectorAll('.option');
+options.forEach(option => {
+    // Thêm sự kiện mouseenter để thay đổi ảnh chính khi di chuột vào màu sắc
+    option.addEventListener('mouseenter', function() {
+        const imgSrc = this.querySelector('img').src; // Lấy đường dẫn của ảnh màu sắc
+        document.getElementById('currentImage').src = imgSrc; // Thay đổi ảnh chính
+    });
+
+    // Thêm sự kiện mouseleave để khi rời khỏi màu sắc, ảnh chính quay về ảnh ban đầu (nếu cần)
+    option.addEventListener('mouseleave', function() {
+        const originalImgSrc = document.getElementById('defaultImage').src; // Đường dẫn của ảnh chính ban đầu
+        document.getElementById('currentImage').src = originalImgSrc; // Thay đổi ảnh chính
+    });
+    // Thêm sự kiện click để chọn màu và thay đổi ảnh chính
+    option.addEventListener('click', function() {
+        // Bỏ chọn tất cả các thẻ màu sắc trước đó
+        options.forEach(opt => opt.classList.remove('selected'));
+        
+        // Chọn thẻ màu sắc hiện tại và đánh dấu là đã chọn
+        this.classList.add('selected');
+        
+        // Lấy đường dẫn ảnh và thay đổi ảnh chính
+        const imgSrc = this.querySelector('img').src;
+        document.getElementById('currentImage').src = imgSrc;
+      
+        // Thực hiện các thay đổi khác nếu cần
+        const selectedColor = this.querySelector('span').innerText;
+        console.log('Bạn đã chọn màu:', selectedColor);
+    });
+});
