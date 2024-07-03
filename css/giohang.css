@@ -1,0 +1,228 @@
+.luachon {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.luachon h2 {
+  margin-right: 15px;
+  color: #cccccc;
+}
+#chon {
+  color: black;
+}
+.chon_giohang a h2:hover,
+.chon_thanhtoan a h2:hover {
+  color: black;
+}
+.khunggiohang {
+  margin: 0 auto;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 30px;
+}
+@media (max-width: 1290px) {
+  .khunggiohang {
+    grid-template-columns: repeat(auto-fill, minmax(790px, 1fr));
+    gap: 30px;
+  }
+}
+.sanphamtronggiohang {
+  border-right: 3px solid rgb(118, 113, 113);
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+}
+.table_san_pham img {
+  width: 100px;
+  height: 100px;
+}
+.table_san_pham td {
+  padding: 10px 20px;
+}
+.huysp p {
+  border: 2px solid #cccccc;
+  padding: 0px 6px;
+  border-radius: 50%;
+  color: #cccccc;
+  cursor: pointer;
+}
+.huysp p:hover {
+  color: black;
+  border: 2px solid black;
+}
+.tensp a {
+  color: black;
+}
+.tensp a:hover {
+  color: rgb(195, 128, 4);
+}
+.dong_san_pham {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.soluongsp_giohang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.soluongsp_giohang input {
+  width: 20px;
+  height: 22px;
+  font-size: 15px;
+}
+.soluongsp_giohang .giamsp {
+  margin-left: 0px;
+}
+.soluongsp_giohang button {
+  width: 20px;
+  font-size: 15px;
+}
+.soluongsp_giohang button:hover {
+  background-color: orange;
+}
+.soluongsp_giohang button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dongtieude {
+  border-bottom: 3px solid rgb(94, 93, 93);
+}
+
+.dongtieude td {
+  border-bottom: 3px solid rgb(145, 145, 145);
+}
+.ngatdong {
+  border-bottom: 3px solid rgb(94, 93, 93);
+}
+.ngatdong td {
+  border-bottom: 3px solid rgb(145, 145, 145);
+}
+.xemsp_capnhat {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 225px 225px;
+  gap: 50px;
+  align-content: center;
+  justify-content: center;
+}
+.xemsp_capnhat h3 {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.tieptucxemsp h3 {
+  background-color: #066a9c;
+  color: white;
+  padding: 6px 8px;
+}
+.tieptucxemsp h3:hover {
+  background-color: #349bce;
+  box-shadow: 0px 0px 3px black;
+}
+.capnhatsp h3 {
+  background-color: #bb1122;
+  color: white;
+  padding: 6px 8px;
+}
+.capnhatsp h3:hover {
+  background-color: #d94655;
+  box-shadow: 0px 0px 3px black;
+}
+.tongtientronggiohang {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.tieudetongtien {
+  text-transform: uppercase;
+}
+.tieudetongtien hr {
+  border: 2px solid rgb(145, 145, 145);
+  width: 85%;
+}
+.tamtinh {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.tamtinh hr {
+  width: 89%;
+}
+.loptamtinh {
+  display: flex;
+}
+.tieudetamtinh {
+  flex-basis: 70%;
+}
+.thanhtoan {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.thanhtoan a {
+  padding: 8px 15px 9px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(232, 160, 25);
+  border-radius: 8px;
+}
+.thanhtoan a:hover {
+  background-color: rgb(244, 192, 97);
+  box-shadow: 0px 0px 4px black;
+}
+.tieude_uudai {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.tieude_uudai hr {
+  width: 89%;
+}
+.nhap_uudai {
+  margin-top: 15px;
+}
+.nhap_uudai input {
+  width: 60%;
+  height: 40px;
+  outline: none;
+  font-size: 20px;
+}
+.apdunguudai {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+
+  width: 60%;
+  padding: 7px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #d62133;
+  color: white;
+}
+.apdunguudai:hover {
+  background-color: #f64758;
+  box-shadow: 0px 0px 4px black;
+}
+.message {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+}
