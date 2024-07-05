@@ -706,3 +706,13 @@ nav.danhmuc {
 .icongiohang a {
   color: black;
 }
+.aosuoiam {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+@media (max-width: 1024px) {
+  .aosuoiam {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+}
