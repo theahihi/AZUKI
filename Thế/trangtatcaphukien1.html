@@ -55,6 +55,18 @@
               placeholder="Tìm kiếm sản phẩm...."
             />
           </div>
+          <div class="danhmuctimkiem">
+            <select name="" id="timkiemtheodanhmuc">
+              <option value="" hidden>Danh mục</option>
+              <option value="">Áo Điều hoà</option>
+              <option value="">Áo sưởi ấm</option>
+              <optgroup label="Phụ kiện">
+                <option value="pinquatsac">Pin quạt sạc</option>
+                <option value="aoroi">Áo rời</option>
+              </optgroup>
+              <option value="spnoibat">Sản phẩm nổi bật</option>
+            </select>
+          </div>
           <div id="button">
             <button type="submit" style="color: black" id="search-button">
               <i class="fa fa-search"></i>
@@ -146,9 +158,13 @@
                         >chính sách vận chuyển</a
                       >
                     </li>
-                    <li><a href="">chính sách đổi trả hàng và hoàn tiền</a></li>
                     <li>
-                      <a href=""
+                      <a href="../maianh/chinhsachdoitrahanghoantien.html"
+                        >chính sách đổi trả hàng và hoàn tiền</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../maianh/chinhsachbaovethongtincanhan.html"
                         >chính sách bảo vệ thông tin cá nhân của người tiêu dùng
                       </a>
                     </li>
@@ -460,7 +476,9 @@
               <a href="../Quyen/ao_dieu_hoa.html">Áo điều hoà AZUKI</a>
             </li>
             <li class="list"><a href="">Áo điều hoà AZUKI 2024 </a></li>
-            <li class="list"><a href="">Phụ kiện áo điều hoà AZUKI</a></li>
+            <li class="list">
+              <a href="./trangphukien.html">Phụ kiện áo điều hoà AZUKI</a>
+            </li>
             <li class="list">
               <a href="../maianh/aosuoiam.html">Áo sưởi ấm AZUKI</a>
             </li>
@@ -483,10 +501,14 @@
               >
             </li>
             <li class="list">
-              <a href="">Chính sách đổi trả hàng và hoàn tiền</a>
+              <a href="../maianh/chinhsachdoitrahanghoantien.html"
+                >Chính sách đổi trả hàng và hoàn tiền</a
+              >
             </li>
             <li class="list">
-              <a href="">Chính sách bảo vệ thông tin cá nhân người tiêu dùng</a>
+              <a href="../maianh/chinhsachbaovethongtincanhan.html"
+                >Chính sách bảo vệ thông tin cá nhân người tiêu dùng</a
+              >
             </li>
           </ul>
         </div>
@@ -521,5 +543,6 @@
     </div>
     <script src="../js/timkiem.js"></script>
     <script src="../js/cuonheader.js"></script>
+    <script src="../js/tudongfit.js"></script>
   </body>
 </html>

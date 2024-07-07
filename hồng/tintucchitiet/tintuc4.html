@@ -1,0 +1,352 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AZUKI – Sweat Away, Happiness Stays</title>
+    <link rel="stylesheet" href="../css/tintuc.css" />
+    <link rel="stylesheet" href="../css/tintucchitiet.css" />
+    <link rel="stylesheet" href="../../css/trangchu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="../../img/faviconazuki.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="linkdau">
+        <a href="../gioithieu.html" class="linkdaucon">Giới thiệu</a>
+        <a href="../tintuc.html" class="linkdaucon">Tin tức</a>
+        <a href="../../maianh/lienhe.html" class="linkdaucon">Liên hệ</a>
+        <a href="../dangnhap.html" class="linkdaucon">Đăng nhập</a>
+      </div>
+      <div class="congcu">
+        <div class="congcucon1" id="logovachu">
+          <div class="logo">
+            <a href="../../index.html"
+              ><img src="../../img/logoazuki.png" alt=""
+            /></a>
+          </div>
+          <div class="chulogo">
+            <h3>ÁO ĐIỀU HÒA AZUKI</h3>
+            <p>Thương hiệu chất lượng số 1 Việt Nam</p>
+          </div>
+        </div>
+        <div class="search-text">
+          <div id="input">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Tìm kiếm sản phẩm...."
+            />
+          </div>
+          <div class="danhmuctimkiem">
+            <select name="" id="timkiemtheodanhmuc">
+              <option value="" hidden>Danh mục</option>
+              <option value="">Áo Điều hoà</option>
+              <option value="">Áo sưởi ấm</option>
+              <optgroup label="Phụ kiện">
+                <option value="pinquatsac">Pin quạt sạc</option>
+                <option value="aoroi">Áo rời</option>
+              </optgroup>
+              <option value="spnoibat">Sản phẩm nổi bật</option>
+            </select>
+          </div>
+          <div id="button">
+            <button type="submit" style="color: black" id="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="giohang_lienhe">
+          <div class="dienthoai">
+            <div class="icondienthoai">
+              <i class="fa fa-phone" style="font-size: 35px"></i>
+            </div>
+            <div class="motadienthoai">
+              <p class="">
+                HOTLINE <br />
+                <span>0888 832 368</span>
+              </p>
+            </div>
+          </div>
+          <div class="giohang">
+            <div class="icongiohang">
+              <i class="fa fa-shopping-cart" style="font-size: 35px"></i>
+            </div>
+            <div class="motagiohang">
+              <p class="">
+                GIỎ HÀNG <br />
+                <span> 0 sản phẩm</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="danhmuc">
+        <div class="box_menu">
+          <nav>
+            <ul>
+              <li class="muc">
+                <a class="daumuc" href="../../index.html">Trang chủ</a>
+              </li>
+              <li class="muc">
+                <a class="daumuc" href="../../Quyen/ao_dieu_hoa.html"
+                  >Áo điều hoà</a
+                >
+              </li>
+              <li class="muc"><a class="daumuc" href="">Áo sưởi ấm</a></li>
+              <li class="muc">
+                <a class="daumuc" href=""
+                  >Phụ kiện <i class="fa fa-angle-down"></i
+                ></a>
+                <div class="box_submenu">
+                  <ul>
+                    <li><a href="../../Thế/trangphukien2.html">Phụ kiện Pin,quạt sạc</a></li>
+                    <li><a href="../aoroi.html">Áo rời(không phụ kiện)</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="muc">
+                <a class="daumuc" href="../../maianh/chinhsachbaohanh.html" id="bogach"
+                  >Chính sách <i class="fa fa-angle-down"></i
+                ></a>
+                <script>
+                  document
+                    .getElementById("bogach")
+                    .addEventListener("click", function (event) {
+                      event.preventDefault();
+                    });
+                </script>
+                <div class="box_submenu">
+                  <ul>
+                    <li>
+                      <a href="../maianh/chinhsachbaohanh.html"
+                        >chính sách bảo hành</a
+                      >
+                    </li>
+                    <li><a href="">chính sách chuyển hàng</a></li>
+                    <li><a href="">chính sách vận chuyển</a></li>
+                    <li><a href="">chính sách đổi trả hàng và hoàn tiền</a></li>
+                    <li>
+                      <a href=""
+                        >chính sách bảo vệ thông tin cá nhân của người tiêu dùng
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </div>
+    
+    <article id="post-2171" class="post-2171 post type-post status-publish format-standard has-post-thumbnail hentry category-khong-phan-loai category-tin-tuc tag-ao-dieu-hoa tag-ao-dieu-hoa-azuki tag-ao-dieu-hoa-azuki-va-cong-nghe-hien-dai tag-ao-dieu-hoa-chat-luong-tot tag-ao-dieu-hoa-so-1-thi-truong tag-ao-dieu-hoa-thuong-hieu-azuki tag-azuki-ao-dieu-hoa-chinh-hang tag-cong-nghe-moi-trong-ao-dieu-hoa-azuki tag-dia-chi-mua-ao-dieu-hoa-gia-tot tag-nen-mua-ao-dieu-hoa-cua-hang-nao tag-nen-mua-ao-dieu-hoa-o-dau tag-thuong-hieu-ao-dieu-hoa-uy-tin-nhat">
+
+    <div class="entry-meta">
+        <span class="entry-time"><i class="icon-calendar"></i> 11:09 sáng 13/08/2023</span>
+        <span class="entry-view"><i class="icon-eye"></i> 518 lượt xem</span>
+    </div>
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+</article>
+<div class="container-tintucct">
+  <div class="main-content">
+      <div class="img-tintucct">
+          <img src="../img/image7.jpg" alt="Image">
+          <div class="text-overlay"><h4 style="color: #1391e6 ;text-align: justify; font-size: 20px;">ÁO SƯỞI ẤM BẰNG ĐIỆN LIỆU CÓ TỐT VÀ ẤM NHƯ QUẢNG CÁO? CÓ NGUY HIỂM KHÔNG?</h4></div>
+      </div>
+  </div>
+  <div class="related-news">
+    <h3>Những tin tức liên quan</h3>
+    <ul>
+        <li>
+            <a href="./tintuc2.html">
+                <div class="news-item">
+                    <img src="../img/image2.jpg" width="100" height="100" alt="Hình ảnh tin tức"/>
+                    <h4>Áo điều hòa Azuki - Kiến tạo kỳ tích, chinh phục thế giới</h4>
+                </div>
+            </a>
+        </li>
+        <li>
+          <a href="./tintuc3.html">
+              <div class="news-item">
+                  <img src="../img/image3.jpg" width="100" height="100" alt="Hình ảnh tin tức"/>
+                  <h4>Bệnh Viện Chợ Rẫy – TP Hồ Chí Minh sử dụng áo làm mát Azuki</h4>
+              </div>
+          </a>
+      </li>
+      <li>
+        <a href="./tintuc4.html">
+            <div class="news-item">
+                <img src="../img/image4.jpg" width="100" height="100" alt="Hình ảnh tin tức"/>
+                <h4>Áo sưởi ấm bằng điện liệu có ấm, có tốt như quảng cáo?</h4>
+            </div>
+        </a>
+    </li>
+    <li>
+      <a href="./tintuc6.html">
+          <div class="news-item">
+              <img src="../img/image6.jpg" width="100" height="100" alt="Hình ảnh tin tức"/>
+              <h4>Áo điều hòa là gì? Cách phân biệt áo điều hòa Azuki với loại kém chất lượng.</h4>
+          </div>
+      </a>
+  </li>
+    </ul>
+</div>
+  
+</div>
+        <div class="entry-content">
+            <p style="text-align: justify;"><strong>Áo sưởi ấm bằng điện là sản phẩm áo có các tấm thanh sưởi bằng điện bao quanh, khi dùng sạc pin dự phòng liên kết thì làm áo ấm lên theo các mức điều chỉnh linh động, giúp cho người mặc cảm thấy ấm ngay lập tức mà không cần mặc quá nhiều áo trong mùa lạnh. Sản phẩm áo sưởi ấm được ưa chuộng và dùng phổ biến tại các nước lạnh Như Châu Âu, Châu Mỹ, Hàn Quốc, Nhật Bản trong nhiều năm qua, và cũng đang khá hot tại Việt Nam trong một hai năm gần đây.</strong></p>
+        <p><strong>Tuy nhiên nhiều người thắc mắc liệu sử dụng áo sưởi bằng điện có an toàn? Có dễ sử dụng, giặt là thế nào? Có dễ hỏng không? Bài viết dưới đây sẽ làm rõ câu trả lời:</strong><a href="https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep.jpg"><br />
+        </a><a href="https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_.jpg"><img fetchpriority="high" decoding="async" class="alignnone size-medium wp-image-387 aligncenter" src="https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_-300x300.jpg" alt="" width="300" height="300" srcset="https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_-300x300.jpg 300w, https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_-1024x1024.jpg 1024w, https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_-150x150.jpg 150w, https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_-768x768.jpg 768w, https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_-600x600.jpg 600w, https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_-100x100.jpg 100w, https://azuki.com.vn/wp-content/uploads/2021/11/81UYQrLh-tL._AC_UL1500_.jpg 1500w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+        <p style="text-align: justify;">Chiếc áo sưởi không chỉ thay thế cho chiếc áo ấm thông thường trong mùa đông lạnh mà nó còn chứa nhiều công dụng rất tốt cho sức khỏe của bạn. Đặc biệt cho những ai sợ &#8221; mùa lạnh&#8221;, cơ thể cực yếu khi trời trở lạnh. Mặc đi chơi, đi làm những công việc ngoài trời gió lạnh hoặc đi du lịch đến những vùng lạnh mà không cần mặc quá nhiều quần áo mà chỉ cần mặc 1c áo sưởi ấm thì đã vô cùng thoải mái rồi.</p>
+        <p style="text-align: justify;">Khi cơ thể bị lạnh, chức năng của các cơ quan nội tạng bị chậm lại và quá trình trao đổi chất giảm xuống, điều này không tốt cho sức khỏe của bạn. Áo sưởi làm nóng ba vị trí đặc biệt nhất là sau gáy, 2 bên bụng để cải thiện lưu thông máu. Nó làm tăng sự trao đổi chất và giữ cho các bộ phận của cơ thể hoạt động tốt, ngăn ngừa đột quỵ, suy tim, hô hấp và các bệnh thường gặp trong mùa lạnh. Do vậy mà thời tiết rét cỡ nào đi nữa, Bạn vẫn luôn cảm thấy ấm và bảo vệ sức khỏe của bạn một cách tối đa.</p>
+        <p style="text-align: center;"><a href="https://azuki.com.vn/wp-content/uploads/2021/11/ghile-ke-cheo1.jpg"><img decoding="async" class="alignnone size-medium wp-image-386" src="https://azuki.com.vn/wp-content/uploads/2021/11/ghile-ke-cheo1-291x300.jpg" alt="" width="291" height="300" srcset="https://azuki.com.vn/wp-content/uploads/2021/11/ghile-ke-cheo1-291x300.jpg 291w, https://azuki.com.vn/wp-content/uploads/2021/11/ghile-ke-cheo1.jpg 427w" sizes="(max-width: 291px) 100vw, 291px" /></a></p>
+        <p style="text-align: justify;">Số lượng miếng đệm sưởi tích hợp có thể truyền nhiệt trên diện rộng khi thời tiết lạnh giá, giúp bạn nhanh chóng làm ấm toàn bộ cơ thể. Nó có thể giảm đau bụng kinh, giảm đau nhức xương khớp, thúc đẩy tuần hoàn máu, đẩy nhanh quá trình trao đổi chất, giảm đau thắt lưng và làm ấm toàn thân nhanh chóng vào mùa lạnh.</p>
+        <p style="text-align: justify;"><strong>ÁO SƯỞI ẤM CÓ AN TOÀN VÀ DỄ SỬ DỤNG KHÔNG?</strong></p>
+        <p style="text-align: justify;">Với vật liệu sưởi ấm bằng sợi composite hoặc làm từ sợi carbon, công nghệ cao được sử dụng như một nguồn nhiệt,làm ấm cơ thể từ lõi. Và dòng điện từ pin vào là dòng điện 5V-2A không lớn, nếu như chúng ta sờ tay vào trực tiếp tấm nhiệt đó thì chỉ cảm nhận được nó nóng do sinh nhiệt, mà các tấm sưởi được may bên trong áo, cách qua 1 đến 2 lớp vải. Do đó đặc biệt an toàn khi tiếp xúc và mặc lên người.</p>
+        <p style="text-align: justify;"><strong>DỄ DÀNG GIẶT TAY/ GIẶT MÁY:</strong></p>
+        <p style="text-align: justify;">Áo sưởi ấm cơ bản là giống như một chiếc áo ấm bình thường, do đó cũng dễ dàng giặt là, chúng ta có thể giặt tay hoặc giặt máy đều được. Tuy nhiên có 1 điểm cần lưu ý, các tấm sưởi nằm các vùng đặc biệt của áo, để áo được bền theo thời gian thì chúng ta nên ưu tiên giặt tay, không nên giặt máy nhiều, và tránh trà mạnh vào các vị trí chứa tấm sưởi để chiếc áo được bền, lâu hỏng.</p>
+        <p style="text-align: justify;">Khi giặt cần lưu ý, cần lấy cục pin dự phòng ra khỏi áo đồng thời đậy nắp cao su nơi tiếp xúc với cục pin để nước không ngấm vào đầu usb làm hỏng dây.</p>
+        <p style="text-align: center;"><a href="https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_.jpg"><img decoding="async" class="alignnone size-medium wp-image-384" src="https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_-300x300.jpg" alt="" width="300" height="300" srcset="https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_-300x300.jpg 300w, https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_-150x150.jpg 150w, https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_-768x768.jpg 768w, https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_-600x600.jpg 600w, https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_-100x100.jpg 100w, https://azuki.com.vn/wp-content/uploads/2021/11/61Y69clyJ5L._AC_UL1000_.jpg 1000w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+        <p>&nbsp;</p>
+        <p style="text-align: justify;"><strong>KHÔNG PHẢI MẶC QUÁ NHIỀU QUẦN ÁO DÀY CỘP [ ĐIỀU MÀ AI CŨNG GHÉT KHI MÙA ĐÔNG]</strong></p>
+        <p style="text-align: justify;">Điều này vô cùng là tiện nghi và đáng tiền khi các bạn mặc áo sưởi ấm. Khi thời tiết quá rét, chúng ta quá đau đầu vì không biết phải mặc gì hoặc mặc quá nhiều đồ lên người khiến cơ thể nặng nề, khó chịu thì chỉ cần mặc 1c áo lót mỏng bên trong hoặc 1c sơ mi lịch sự, bên ngoài là 1 áo khoác sưởi ấm sẽ vô cùng đẹp, nhẹ nhàng và lịch sự ; hoặc khi đi du lịch, đến những nơi vùng lạnh, va ly phải mang quá nhiều đồ nặng nề, cồng kềnh thì chỉ cần mang 1c áo sưởi ấm và một vài cái áo mỏng mặc bên trong. Cực kỳ ấm áp và tiện lợi, cuộc sống sẽ nhẹ nhàng đơn giản đi rất nhiều.</p>
+        <p style="text-align: justify;"><strong>PHÙ HỢP CHO NGƯỜI GIÀ, NGƯỜI CAO TUỔI TRONG MÙA RÉT</strong></p>
+        <p style="text-align: justify;">Như đã đề cập ở trên, áo sưởi có tác dụng không chỉ giữ ấm cơ thể hiệu quả, mà nó còn ngăn ngừa các bệnh trong mùa lạnh. Khi thời tiết lạnh, gây ra các hiện tượng tắc nghẽn mạch máu, dẫn đến các bệnh đột quỵ, đau xương khớp, đau đầu, lạnh và đau bụng, đặc biệt là người già, người chịu lạnh kém. Những đối tượng này sức khỏe kém nên dễ nhiễm bệnh tật ốm đau nếu cơ thể không được giữ ấm. Mà khi mặc áo sưởi lại vô cùng nhẹ nhàng, thoải mái, không cần mặc quá nhiều áo bên trong. Do đó chiếc áo sưởi ấm này là một món quà vô cùng ý nghĩa và tuyệt vời cho các bậc cha mẹ, ông bà, thầy cô trong mùa đông lạnh.</p>
+        <p style="text-align: center;"><a href="https://azuki.com.vn/wp-content/uploads/2021/11/tang-ong-ba.jpg"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-385" src="https://azuki.com.vn/wp-content/uploads/2021/11/tang-ong-ba-300x186.jpg" alt="" width="300" height="186" srcset="https://azuki.com.vn/wp-content/uploads/2021/11/tang-ong-ba-300x186.jpg 300w, https://azuki.com.vn/wp-content/uploads/2021/11/tang-ong-ba-768x475.jpg 768w, https://azuki.com.vn/wp-content/uploads/2021/11/tang-ong-ba-600x371.jpg 600w, https://azuki.com.vn/wp-content/uploads/2021/11/tang-ong-ba.jpg 970w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+        <p>Từ những phân tích ở trên có thể thấy, sản phẩm áo sưởi là sản phẩm vô cùng tiện nghi và tuyệt vời trong mùa đông lạnh giá mà ai cũng cần có 1 chiếc trong tủ.</p>
+        <p>Tuy nhiên để chọn được sản phẩm áo sưởi chất lượng thì không phải là điều dễ và chúng ta cần tìm những đơn vị uy tín, chất lượng cung cấp dòng sản phẩm này để sử dụng. Vì hàng trung quốc, hàng chôi nổi kém chất lượng trên thị trường rất nhiều, nên khách hàng cũng cần hết sức cẩn thận và cân nhắc, nên là những người tiêu dùng thông minh khi lựa chọn sản phẩm để tránh bị lừa.</p>
+        <p>Một số thương hiệu áo sưởi hàng chính hãng, uy tín chất lượng có thể tham khảo:</p>
+        <p>Áo sưởi ấm AZUKI, chất lượng cao cấp, uy tín, sản phẩm được nhiều người tin dùng và ưa chuộng tại Nhật Bản, Hàn Quốc, Việt Nam. Chất lượng tốt và đặc biệt dịch vụ chăm sóc khách hàng hậu mãi cực kỳ chu đáo, ấn tượng của thương hiệu. Giá áo sưởi AZUKI cũng cực tốt, chỉ từ 1tr đến 1tr500k tùy dòng.</p>
+        <p>&nbsp;</p>
+        <p><a href="https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep.jpg"><img loading="lazy" decoding="async" class="alignnone size-medium wp-image-383" src="https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep-278x300.jpg" alt="" width="278" height="300" srcset="https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep-278x300.jpg 278w, https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep-949x1024.jpg 949w, https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep-768x829.jpg 768w, https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep-600x647.jpg 600w, https://azuki.com.vn/wp-content/uploads/2021/11/ao-suoi-azuki-dep.jpg 1390w" sizes="(max-width: 278px) 100vw, 278px" /></a></p>
+
+        <p><strong>AZUKI INTERNATIONAL COMPANY LIMITED</strong></p>
+        <p>Mã số thuế: 0109675931</p>
+        <p><strong>CS1:</strong> 150 Thượng Đình- Thanh Xuân – Hà Nội</p>
+        <p><strong>CS2:</strong> Số 15 Ngõ 282 Lạc Long Quân, P. Bưởi, Quận Tây Hồ, TP Hà Nội.</p>
+        <p><strong>Hotline:</strong> 0963677986/0888832368</p>
+      <p><i class="fas fa-tags"></i> Tags: <a href="https://azuki.com.vn/tag/ao-dieu-hoa/" rel="tag">áo điều hòa</a>, <a href="https://azuki.com.vn/tag/ao-dieu-hoa-azuki/" rel="tag">áo điều hòa AZUKI</a>, <a href="https://azuki.com.vn/tag/ao-dieu-hoa-azuki-va-cong-nghe-hien-dai/" rel="tag">áo điều hòa azuki và công nghệ hiện đại</a>, <a href="https://azuki.com.vn/tag/ao-dieu-hoa-chat-luong-tot/" rel="tag">áo điều hòa chất lượng tốt</a>, <a href="https://azuki.com.vn/tag/ao-dieu-hoa-so-1-thi-truong/" rel="tag">áo điều hòa số 1 thị trường</a>, <a href="https://azuki.com.vn/tag/ao-dieu-hoa-thuong-hieu-azuki/" rel="tag">áo điều hòa thương hiệu azuki</a>, <a href="https://azuki.com.vn/tag/azuki-ao-dieu-hoa-chinh-hang/" rel="tag">azuki áo điều hoà chính hãng</a>, <a href="https://azuki.com.vn/tag/cong-nghe-moi-trong-ao-dieu-hoa-azuki/" rel="tag">công nghệ mới trong áo điều hòa azuki</a>, <a href="https://azuki.com.vn/tag/dia-chi-mua-ao-dieu-hoa-gia-tot/" rel="tag">địa chỉ mua áo điều hòa giá tốt</a>, <a href="https://azuki.com.vn/tag/nen-mua-ao-dieu-hoa-cua-hang-nao/" rel="tag">nên mua áo điều hòa của hãng nào</a>, <a href="https://azuki.com.vn/tag/nen-mua-ao-dieu-hoa-o-dau/" rel="tag">nên mua áo điều hòa ở đâu</a>, <a href="https://azuki.com.vn/tag/thuong-hieu-ao-dieu-hoa-uy-tin-nhat/" rel="tag">thương hiệu áo điều hòa uy tín nhất</a></p>	
+    </div>
+</div>
+
+
+
+	  <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+<!--  -->
+    <div class="footer">
+        <div class="thongtinfooter">
+          <div class="ftthoongtin">
+            <img
+              src="../../img/logotrangazuki.png"
+              alt=""
+              style="width: 180px; height: 70px"
+            />
+            <p class="list">
+              <i class="fas fa-map-marker-alt"></i> <b>Địa chỉ</b>: 150 Thượng
+              Đình - Thanh Xuân - Hà Nội
+            </p>
+            <p></p>
+            <p class="list">
+              <i class="fa fa-phone"></i> <b>Hotline</b>: 0888 832 368
+            </p>
+            <p></p>
+            <p class="list">
+              <i class="fas fa-envelope"></i> <b>Email</b>: Huonglkt2310@gmail.com
+            </p>
+            <p></p>
+            <p class="list">
+              <i class="fas fa-clock"></i> <b>Thời gian làm việc</b>: từ 8:30 đến
+              22:00 các ngày trong tuần từ thứ 2 đến chủ nhật
+            </p>
+  
+            <a href="http://online.gov.vn/Home/WebDetails/111558" target="_blank">
+              <img
+                src="../../img/bocongthuong.jpg"
+                style="
+                  width: 300px;
+                  height: 100px;
+                  border-radius: 20px;
+                  margin-top: 20px;
+                  margin-right: -20px;
+                "
+                alt=""
+              />
+            </a>
+          </div>
+       
+  
+          <div class="sanpham">
+            <h3>SẢN PHẨM</h3>
+            <ul>
+              <li class="list"><a href="">Áo điều hoà AZUKI</a></li>
+              <li class="list"><a href="">Áo điều hoà AZUKI 2024 </a></li>
+              <li class="list"><a href="">Phụ kiện áo điều hoà AZUKI</a></li>
+              <li class="list"><a href="">Áo sưởi ấm AZUKI</a></li>
+            </ul>
+          </div>
+          <div class="chinhsach">
+            <h3>CHÍNH SÁCH</h3>
+            <ul>
+              <li class="list"><a href="">Chính sách bảo hành</a></li>
+              <li class="list"><a href="">Chính sách chuyển hàng</a></li>
+              <li class="list"><a href="">Chính sách vận chuyển</a></li>
+              <li class="list">
+                <a href="">Chính sách đổi trả hàng và hoàn tiền</a>
+              </li>
+              <li class="list">
+                <a href="">Chính sách bảo vệ thông tin cá nhân người tiêu dùng</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mxhvamap">
+            <h3>MẠNG XÃ HỘI</h3>
+            <p class="mxh">
+              <a
+                href="https://www.facebook.com/aodieuhoanhatban.vn"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a
+                href="https://www.youtube.com/channel/UCAKx-vPjpsj8WAXJrVojHwQ"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+            </p>
+            <h3>BẢN ĐỒ</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14899.44182176282!2d105.8164776!3d20.9982301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9010663b27%3A0x7b46985b72a78709!2sC%C3%B4ng%20Ty%20TNHH%20Azuki%20International!5e0!3m2!1svi!2s!4v1718299474620!5m2!1svi!2s"
+              width="250"
+              height="250"
+              style="border: 0; margin-top: 20px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <script src="../../js/timkiem.js"></script>
+      <script src="../../js/cuonheader.js"></script>
+    </body>
+  </html>
+  

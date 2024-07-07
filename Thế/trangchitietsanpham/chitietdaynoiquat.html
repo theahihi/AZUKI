@@ -58,6 +58,18 @@
               placeholder="Tìm kiếm sản phẩm...."
             />
           </div>
+          <div class="danhmuctimkiem">
+            <select name="" id="timkiemtheodanhmuc">
+              <option value="" hidden>Danh mục</option>
+              <option value="">Áo Điều hoà</option>
+              <option value="">Áo sưởi ấm</option>
+              <optgroup label="Phụ kiện">
+                <option value="pinquatsac">Pin quạt sạc</option>
+                <option value="aoroi">Áo rời</option>
+              </optgroup>
+              <option value="spnoibat">Sản phẩm nổi bật</option>
+            </select>
+          </div>
           <div id="button">
             <button type="submit" style="color: black" id="search-button">
               <i class="fa fa-search"></i>
@@ -241,12 +253,12 @@
           </ul>
         </div>
             <div class="chon_soluong">
-                <label for="quantity" class="tieudechon">Số lượng sản phẩm:</label>
+                <label for="quantity" class="tieudechon">Số lượng:</label>
                 
                     <button onclick="decreaseQuantity()" class="giamsp">-</button>
                     <input type="number" id="quantity" name="quantity" min="1" max="10000" value="1" step="1" class="soluong">
                     <button onclick="increaseQuantity()" class="tangsp">+</button>
-                 
+                    <p>1000 sản phẩm có sẵn</p>
             </div>
             <div class="themvaogio_muangay">
                 <button type="submit" class="themvaogio" onclick="return chuyengiohang()"> <i class="fa fa-shopping-cart"></i>Thêm vào giỏ</button>
@@ -648,5 +660,6 @@
     <script src="../../js/chitietsanpham.js"></script>
     <script src="../../js/cuonheader.js"></script>
     <script src="../../js/timkiem.js"></script>
+    <script src="../js/tudongfit.js"></script>
   </body>
 </html>

@@ -58,6 +58,18 @@
               placeholder="Tìm kiếm sản phẩm...."
             />
           </div>
+          <div class="danhmuctimkiem">
+            <select name="" id="timkiemtheodanhmuc">
+              <option value="" hidden>Danh mục</option>
+              <option value="">Áo Điều hoà</option>
+              <option value="">Áo sưởi ấm</option>
+              <optgroup label="Phụ kiện">
+                <option value="pinquatsac">Pin quạt sạc</option>
+                <option value="aoroi">Áo rời</option>
+              </optgroup>
+              <option value="spnoibat">Sản phẩm nổi bật</option>
+            </select>
+          </div>
           <div id="button">
             <button type="submit" style="color: black" id="search-button">
               <i class="fa fa-search"></i>
@@ -240,79 +252,33 @@
             <li>Dây nối Quạt: có logo Azuki khắc nổi, dây có điểm gở</li>
           </ul>
         </div>
-        <div class="chon_size">
-          <label for="" class="tieudechon">Chọn size sản phẩm : </label>
           
-          <div class="can_size">
-              <label>
-                  <span class="size">S</span>
-              </label>
-              <label>
-                  <span class="size cach">M</span>
-              </label>
-              <label>
-                  <span class="size cach">L</span>
-              </label>
-              <label>
-                  <span class="size cach">XL</span>
-              </label>
-              <label>
-                   <span class="size cach">XXL</span>
-              </label>
-           </div>
-        </div>
-          <div class="chon_mau">
-            <label for="color" class="tieudechon">Chọn màu sản phẩm:</label>
-            <div class="colors">
-              <div class="color-item">
-                <div class="color" style="background-color: #ff0000;" title="Đỏ"></div>
-                <p>Đỏ</p>
-              </div>
-              <div class="color-item">
-                <div class="color" style="background-color: #00ff00;" title="Xanh lá"></div>
-                <p>Xanh lá</p>
-              </div>
-              <div class="color-item">
-                <div class="color" style="background-color: #0000ff;" title="Xanh dương"></div>
-                <p>Xanh dương</p>
-              </div>
-              <div class="color-item">
-                <div class="color" style="background-color: #ffff00;" title="Vàng"></div>
-                <p>Vàng</p>
-              </div>
-              <div class="color-item">
-                <div class="color" style="background-color: #ff00ff;" title="Hồng"></div>
-                <p>Hồng</p>
-              </div>
-              <div class="color-item">
-                <div class="color" style="background-color: #00ffff;" title="Xanh ngọc"></div>
-                <p>Xanh ngọc</p>
-              </div>
-              <div class="color-item">
-                <div class="color" style="background-color: #000000;" title="Đen"></div>
-                <p>Đen</p>
-              </div>
-            </div>
-          </div>
+              
+            
+          
             <div class="chon_soluong">
-                <label for="quantity" class="tieudechon">Số lượng sản phẩm:</label>
+                <label for="quantity" class="tieudechon">Số lượng:</label>
                 
                     <button onclick="decreaseQuantity()" class="giamsp">-</button>
                     <input type="number" id="quantity" name="quantity" min="1" max="10000" value="1" step="1" class="soluong">
                     <button onclick="increaseQuantity()" class="tangsp">+</button>
+                    <p>245 sản phẩm có sẵn</p>
                  
             </div>
             <div class="themvaogio_muangay">
                 <button type="submit" class="themvaogio" onclick="return chuyengiohang()"> <i class="fa fa-shopping-cart"></i>Thêm vào giỏ</button>
                 <button type="submit" class="muangay" onclick="return chuyenmuasp() ">Mua sản phẩm</button>
-               
+                
             
             </div>
             <div id="messageBox" style="display: none;">
               <p id="messageText"></p>
               <button onclick="redirectToCart()">Xem giỏ hàng</button>
               <button onclick="closeMessageBox()">Đóng</button>
+              
           </div>
+           
+        
             <div class="lienhe">
                 <p class="tieudechon">Nếu muốn biết thêm về sản phẩm xin liên hệ qua: </p>
                 <p >
@@ -331,6 +297,7 @@
                   </p>
                   
             </div>
+          </div>
             
           </div>
           
@@ -728,5 +695,6 @@
     <script src="../../js/chitietsanpham.js"></script>
     <script src="../../js/cuonheader.js"></script>
     <script src="../../js/timkiem.js"></script>
+    <script src="../js/tudongfit.js"></script>
   </body>
 </html>
