@@ -54,6 +54,18 @@
               placeholder="Tìm kiếm sản phẩm...."
             />
           </div>
+          <div class="danhmuctimkiem">
+            <select name="" id="timkiemtheodanhmuc">
+              <option value="" hidden>Danh mục</option>
+              <option value="">Áo Điều hoà</option>
+              <option value="">Áo sưởi ấm</option>
+              <optgroup label="Phụ kiện">
+                <option value="pinquatsac">Pin quạt sạc</option>
+                <option value="aoroi">Áo rời</option>
+              </optgroup>
+              <option value="spnoibat">Sản phẩm nổi bật</option>
+            </select>
+          </div>
           <div id="button">
             <button type="submit" style="color: black" id="search-button">
               <i class="fa fa-search"></i>
@@ -97,14 +109,20 @@
                   >Áo điều hoà</a
                 >
               </li>
-              <li class="muc"><a class="daumuc" href="../maianh/aosuoiam.html">Áo sưởi ấm</a></li>
+              <li class="muc">
+                <a class="daumuc" href="../maianh/aosuoiam.html">Áo sưởi ấm</a>
+              </li>
               <li class="muc">
                 <a class="daumuc" href="../Thế/trangphukien.html"
                   >Phụ kiện <i class="fa fa-angle-down"></i
                 ></a>
                 <div class="box_submenu">
                   <ul>
-                    <li><a href="../Thế/trangphukien.html">Phụ kiện Pin,quạt sạc</a></li>
+                    <li>
+                      <a href="../Thế/trangphukien.html"
+                        >Phụ kiện Pin,quạt sạc</a
+                      >
+                    </li>
                     <li><a href="./aoroi.html">Áo rời(không phụ kiện)</a></li>
                   </ul>
                 </div>
@@ -127,9 +145,21 @@
                         >chính sách bảo hành</a
                       >
                     </li>
-                    <li><a href="../maianh/chinhsachkiemhang.html">chính sách kiểm hàng</a></li>
-                    <li><a href="../maianh/chinhsachvanchuyen.html">chính sách vận chuyển</a></li>
-                    <li><a href="../maianh/chinhsachdoitrahanghoantien.html">chính sách đổi trả hàng và hoàn tiền</a></li>
+                    <li>
+                      <a href="../maianh/chinhsachkiemhang.html"
+                        >chính sách kiểm hàng</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../maianh/chinhsachvanchuyen.html"
+                        >chính sách vận chuyển</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../maianh/chinhsachdoitrahanghoantien.html"
+                        >chính sách đổi trả hàng và hoàn tiền</a
+                      >
+                    </li>
                     <li>
                       <a href="../maianh/chinhsachbaovethongtincanhan.html"
                         >chính sách bảo vệ thông tin cá nhân của người tiêu dùng
@@ -143,64 +173,66 @@
         </div>
       </nav>
     </div>
-    
+
     <div class="header_space"></div>
     <div>
-        <div class="grid-container">
-          <div class="grid-item">
-            <a href="./tintucchitiet/tintuc1.html">
-                <img src="./img/image1.png" alt="News Image 1" />
-                <h2>Áo điều hòa Azuki 2024 có những công nghệ mới đột phá nào?</h2>
-                
-            </a>
-          </div>
-        
-            <div class="grid-item">
-              <a href="./tintucchitiet/tintuc2.html">
-                <img src="./img/image2.jpg" alt="News Image 2" />
-                <h2>Áo điều hòa Azuki – Kiến tạo kỳ tích, chinh phục thế giới</h2>
-               
-              </a>
-              </div>
-            <div class="grid-item">
-              <a href="./tintucchitiet/tintuc3.html">
-                <img src="./img/image3.jpg" alt="News Image 3" />
-                <h2>Bệnh Viện Chợ Rẫy – TP Hồ Chí Minh sử dụng áo làm mát Azuki</h2>
-                
-              </a>
-              </div>
-            <div class="grid-item">
-              <a href="./tintucchitiet/tintuc4.html">
-                <img src="./img/image4.jpg" alt="News Image 4" />
-                <h2>Áo sưởi ấm bằng điện liệu có tốt và ấm như quảng cáo? Có nguy hiểm không?</h2>
-                
-              </a>
-            </div>
-            <div class="grid-item">
-              <a href="./tintucchitiet/tintuc5.html">
-                <img src="./img/image5.jpg" alt="News Image 5" />
-                <h2>AZUKI tìm kiếm đối tác kinh doanh &#8211; cùng kết nối, cùng phát triển</h2>
-                
-              </a>
-              </div>
-            <div class="grid-item">
-                <a href="./tintucchitiet/tintuc6.html">
-                <img src="./img/image6.jpg" alt="News Image 6" />
-                <h2>Áo điều hòa là gì? Cách phân biệt áo điều hòa Azuki với loại kém chất lượng?</h2>
-                
-              </a>
-              </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="./tintucchitiet/tintuc1.html">
+            <img src="./img/image1.png" alt="News Image 1" />
+            <h2>Áo điều hòa Azuki 2024 có những công nghệ mới đột phá nào?</h2>
+          </a>
         </div>
-        <div class="sotrang">
-          <ul class="pagination page-numbers">
-              <li><a class="prev page-numbers" href="#">&laquo;</a></li>
-              <li><span class="current-page current page-numbers">1</span></li>
-              <li><a class="page-numbers" href="#">2</a></li>
-              <li><a class="next page-numbers" href="#">&raquo;</a></li>
-          </ul>
+
+        <div class="grid-item">
+          <a href="./tintucchitiet/tintuc2.html">
+            <img src="./img/image2.jpg" alt="News Image 2" />
+            <h2>Áo điều hòa Azuki – Kiến tạo kỳ tích, chinh phục thế giới</h2>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./tintucchitiet/tintuc3.html">
+            <img src="./img/image3.jpg" alt="News Image 3" />
+            <h2>Bệnh Viện Chợ Rẫy – TP Hồ Chí Minh sử dụng áo làm mát Azuki</h2>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./tintucchitiet/tintuc4.html">
+            <img src="./img/image4.jpg" alt="News Image 4" />
+            <h2>
+              Áo sưởi ấm bằng điện liệu có tốt và ấm như quảng cáo? Có nguy hiểm
+              không?
+            </h2>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./tintucchitiet/tintuc5.html">
+            <img src="./img/image5.jpg" alt="News Image 5" />
+            <h2>
+              AZUKI tìm kiếm đối tác kinh doanh &#8211; cùng kết nối, cùng phát
+              triển
+            </h2>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="./tintucchitiet/tintuc6.html">
+            <img src="./img/image6.jpg" alt="News Image 6" />
+            <h2>
+              Áo điều hòa là gì? Cách phân biệt áo điều hòa Azuki với loại kém
+              chất lượng?
+            </h2>
+          </a>
+        </div>
+      </div>
+      <div class="sotrang">
+        <ul class="pagination page-numbers">
+          <li><a class="prev page-numbers" href="#">&laquo;</a></li>
+          <li><span class="current-page current page-numbers">1</span></li>
+          <li><a class="page-numbers" href="#">2</a></li>
+          <li><a class="next page-numbers" href="#">&raquo;</a></li>
+        </ul>
       </div>
     </div>
-
 
     <div class="footer">
       <div class="thongtinfooter">
@@ -246,23 +278,43 @@
         <div class="sanpham">
           <h3>SẢN PHẨM</h3>
           <ul>
-            <li class="list"><a href="../Quyen/ao_dieu_hoa.html">Áo điều hoà AZUKI</a></li>
+            <li class="list">
+              <a href="../Quyen/ao_dieu_hoa.html">Áo điều hoà AZUKI</a>
+            </li>
             <li class="list"><a href="">Áo điều hoà AZUKI 2024 </a></li>
-            <li class="list"><a href="../Thế/trangphukien.html">Phụ kiện áo điều hoà AZUKI</a></li>
-            <li class="list"><a href="../maianh/aosuoiam.html">Áo sưởi ấm AZUKI</a></li>
+            <li class="list">
+              <a href="../Thế/trangphukien.html">Phụ kiện áo điều hoà AZUKI</a>
+            </li>
+            <li class="list">
+              <a href="../maianh/aosuoiam.html">Áo sưởi ấm AZUKI</a>
+            </li>
           </ul>
         </div>
         <div class="chinhsach">
           <h3>CHÍNH SÁCH</h3>
           <ul>
-            <li class="list"><a href="../maianh/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
-            <li class="list"><a href="../maianh/chinhsachkiemhang.html">Chính sách kiểm hàng</a></li>
-            <li class="list"><a href="../maianh/chinhsachvanchuyen.html">Chính sách vận chuyển</a></li>
             <li class="list">
-              <a href="../maianh/chinhsachdoitrahanghoantien.html">Chính sách đổi trả hàng và hoàn tiền</a>
+              <a href="../maianh/chinhsachbaohanh.html">Chính sách bảo hành</a>
             </li>
             <li class="list">
-              <a href="../maianh/chinhsachbaovethongtincanhan.html">Chính sách bảo vệ thông tin cá nhân người tiêu dùng</a>
+              <a href="../maianh/chinhsachkiemhang.html"
+                >Chính sách kiểm hàng</a
+              >
+            </li>
+            <li class="list">
+              <a href="../maianh/chinhsachvanchuyen.html"
+                >Chính sách vận chuyển</a
+              >
+            </li>
+            <li class="list">
+              <a href="../maianh/chinhsachdoitrahanghoantien.html"
+                >Chính sách đổi trả hàng và hoàn tiền</a
+              >
+            </li>
+            <li class="list">
+              <a href="../maianh/chinhsachbaovethongtincanhan.html"
+                >Chính sách bảo vệ thông tin cá nhân người tiêu dùng</a
+              >
             </li>
           </ul>
         </div>
