@@ -1,4 +1,4 @@
-function setZoom() {
+//function setZoom() {
   const minWidth = 900; // Độ rộng tối thiểu mà bạn muốn trang web có
   const screenWidth = window.innerWidth;
   let zoomLevel = 1; // Mặc định là 100%
@@ -11,4 +11,4 @@ function setZoom() {
 }
 
 window.onload = setZoom;
-window.onresize = setZoom;
+window.onresize = setZoom;//
